@@ -1,8 +1,15 @@
-@import 'methods/main-variables';
+@import 'fontSets';
 
-/*----------  vendors  ----------*/
+@import 'methods/main-variables';
+@import 'base/typography';
+
+/* vendors
+-------------------------------------------------- */
 @import 'vendors/bs4/bootstrap';
-/*----------  vendors  ----------*/
+/* End of vendors
+-------------------------------------------------- */
+
+
 
 body {
   background-color: $bodyBgColor;

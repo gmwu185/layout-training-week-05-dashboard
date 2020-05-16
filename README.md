@@ -1,3 +1,13 @@
+# 素材與資源
+- Material Icons
+  - [Material Icons Guide (使用文件)](https://google.github.io/material-design-icons/)
+  - [Material Icons Icons(圖示列表)](https://material.io/resources/icons/?style=baseline)
+- Google Fonts
+  - [Lato](https://fonts.google.com/specimen/Lato)
+  - [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono?query=robo)
+
+
+
 # npm 與 Gulp 前端工具、bower 插件指令，執行指令依序輸入
 - `npm install -g bower`
 - `npm install`

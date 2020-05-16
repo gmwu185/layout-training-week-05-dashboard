@@ -1,0 +1,87 @@
+// 配合 bootstrap -> utilities -> text 寫法
+// https://bootstrap.hexschool.com/docs/4.2/utilities/text/#monospace
+
+
+/* webFont
+-------------------------------------------------- */
+
+.text-RobotoMono-Regular400 {
+  font-family: 'Roboto Mono', -apple-system, BlinkMacSystemFont, "Segoe UI", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+}
+.text-Lato-Regular400 {
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+}
+.text-Lato-Bold700 {
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700;
+}
+/* End of webFont
+-------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+/*----------  fontSize  ----------*/
+// 12, 14, 16, 20, 24,
+// .fontSize--s{
+//   font-size: 0.875rem;
+// }
+// .fontSize--base{
+//   font-size: 1rem;
+// }
+// .fontSize--m{
+//   font-size: 1.25rem;
+// }
+// .fontSize--l{
+//   font-size: 2.25rem;
+// }
+// .fontSize--xl{
+//   font-size: 3rem;
+// }
+// .fontSize--2xl{
+//   font-size: 4rem;
+// }
+// .fontSize--3xl{
+//   font-size: 4.5rem;
+// }
+/*----------  /fontSize  ----------*/
+/*----------  字重/字租  ----------*/
+// .fontWeight--bold{
+//   font-weight: bold;
+// }
+// .fontWeight--500{
+//   font-weight: 500;
+// }
+// .fontWeight--400{
+//   font-weight: 400;
+// }
+// .fontWeight--300{
+//   font-weight: 300;
+// }
+/*----------  /字重/字租  ----------*/
+/*----------  斜體、傾斜等字體樣式  ----------*/
+// .fontStyle--italic{
+//   font-style: italic;
+// }
+/*----------  /斜體、傾斜等字體樣式  ----------*/
+/*----------  英文字元的大小寫  ----------*/
+// // 定義所有字母均為大寫
+// .textTransform--uppercase{
+//   text-transform: uppercase;
+// }
+// // 定義所有字母均為小寫
+// .textTransform--lowercase{
+//   text-transform: lowercase;
+// }
+// // 定義單字的第一個字母大寫，其他字母小寫
+// .textTransform--capitalize{
+//   text-transform: capitalize;
+// }
+/*----------  /英文字元的大小寫  ----------*/
