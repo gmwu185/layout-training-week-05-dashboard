@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title 這是 BootStrap 4 與 jQuery 套件的起手勢手腳架
+    link(rel="stylesheet", href="assets/css/all.css")
+  body
+    .container
+      h1 這是大標題
+      table.table
+        thead
+          tr
+            th(scope='col') #
+            th(scope='col') First
+            th(scope='col') Last
+            th(scope='col') Handle
+        tbody
+          tr
+            th(scope='row') 1
+            td Mark
+            td Otto
+            td @mdo
+          tr
+            th(scope='row') 2
+            td Jacob
+            td Thornton
+            td @fat
+          tr
+            th(scope='row') 3
+            td Larry
+            td the Bird
+            td @twitter
+
+      // Button trigger modal
+      button.btn.btn-primary(type='button', data-toggle='modal', data-target='#exampleModalCenter')
+        | Launch demo modal
+      // Modal
+      #exampleModalCenter.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+          .modal-content
+            .modal-header
+              h5#exampleModalCenterTitle.modal-title Modal title
+              button.close(type='button', data-dismiss='modal', aria-label='Close')
+                span(aria-hidden='true') ×
+            .modal-body
+              | ...
+            .modal-footer
+              button.btn.btn-outline-primary(type='button', data-dismiss='modal') Close
+              button.btn.btn-primary(type='button') Save changes
+
+      script(src="assets/js/allVendors.js?#{new Date().getTime()}")
+      script(src="assets/js/all.js?#{new Date().getTime()}")
+

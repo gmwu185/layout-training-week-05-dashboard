@@ -1,0 +1,10 @@
+@import 'methods/main-variables';
+
+/*----------  vendors  ----------*/
+@import 'vendors/bs4/bootstrap';
+/*----------  vendors  ----------*/
+
+body {
+  background-color: $bodyBgColor;
+  color: $bodyTextColor;
+}
