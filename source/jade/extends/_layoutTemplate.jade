@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+html(lang="zh-TW")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title 
+      | ANSWER-dashboard
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    link(rel="stylesheet", href="assets/css/all.css")
+    // localStylesheet J-template
+    block localStylesheet
+    // /localStylesheet J-template
+  body
+    .container-fluid
+      .row
+        // block l-sidebar J-template
+        block l-sidebar
+          nav.col-2.l-sidebar.bg-primaryLight
+            a.l-sidebarLogo(href="index.html", title="go to index")
+              img(src="assets/img/logo-ANSWER.svg", alt="ANSWER logo")
+            ul.l-sidebarNav.flex-column
+              li.l-sidebarNav__list
+                a.l-sidebarNavLink(href='#')
+                  span.l-sidebarNavLink__icon.material-icons
+                    | insert_chart
+                  span.text-Lato-Bold
+                    | Dashboard
+              li.l-sidebarNav__list
+                a.l-sidebarNavLink(href='#') 
+                  span.l-sidebarNavLink__icon.material-icons
+                    | forum
+                  span.text-Lato-Bold
+                    | Question
+              li.l-sidebarNav__list
+                a.l-sidebarNavLink.active(href='#') 
+                  span.l-sidebarNavLink__icon.material-icons
+                    | assignment
+                  span.text-Lato-Bold
+                    | Assignment
+              li.l-sidebarNav__list
+                a.l-sidebarNavLink(href='#') 
+                  span.l-sidebarNavLink__icon.material-icons
+                    | video_library
+                  span.text-Lato-Bold  
+                    | Course
+              li.l-sidebarNav__list
+                a.l-sidebarNavLink.active(href='#') 
+                  span.l-sidebarNavLink__icon.material-icons
+                    | people
+                  span.text-Lato-Bold
+                    | Admin
+              li.l-sidebarNav__list
+                a.l-sidebarNavLink(href='#') 
+                  span.l-sidebarNavLink__icon.material-icons
+                    | settings
+                  span.text-Lato-Bold
+                    | Settings
+            .media.l-sidebarFooter.c-user
+              .c-userCover.c-userCover--userImgOne.mr-4
+              .media-body.c-userInfo
+                p.h3.text-Lato-Bold.mb-1.c-userInfo__name
+                  | Andy Chen
+                p.h4.c-userInfo__text.text-secondary
+                  | andy0401@mail.com
+        // /block l-sidebar J-template
+        main.col.p-8
+          .row.mainInner
+            // mainInner J-template
+            block mainInner
+            // /mainInner J-template
+        // /main
+    // block globalScripts J-template
+    block globalScripts
+      script(src='assets/js/allVendors.js?#{new Date().getTime()}')
+      script(src='assets/js/all.js?#{new Date().getTime()}')
+    // /block globalScripts J-template

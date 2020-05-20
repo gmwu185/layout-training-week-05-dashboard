@@ -1,65 +1,156 @@
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title 這是 BootStrap 4 與 jQuery 套件的起手勢手腳架
-    link(rel="stylesheet", href="assets/css/all.css")
-  body
-    .container
-      h1.h1 這是 h1 - 24px
-      h2 這是 h2 - 20px
-      h3 這是 h3 - 16px
-      h4 這是 h4 - 14px
-      h5 這是 h5 - 12px
-      h6 這是 h6 - 10px
-      p 基本字級 1rem = 16px
-      p.text-RobotoMono-Regular400 text-RobotoMono-Regular400
-      p.text-Lato-Regular400 text-Lato-Regular400
-      p.text-Lato-Bold700 text-Lato-Bold700
-      p
-        small 這是 small - 12px
-      table.table
-        thead
-          tr
-            th(scope='col') #
-            th(scope='col') First
-            th(scope='col') Last
-            th(scope='col') Handle
-        tbody
-          tr
-            th(scope='row') 1
-            td Mark
-            td Otto
-            td @mdo
-          tr
-            th(scope='row') 2
-            td Jacob
-            td Thornton
-            td @fat
-          tr
-            th(scope='row') 3
-            td Larry
-            td the Bird
-            td @twitter
+//- index.jade
+extends extends/_layoutTemplate.jade
 
-      // Button trigger modal
-      button.btn.btn-primary(type='button', data-toggle='modal', data-target='#exampleModalCenter')
-        | Launch demo modal
-      // Modal
-      #exampleModalCenter.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
-        .modal-dialog.modal-dialog-centered(role='document')
-          .modal-content
-            .modal-header
-              h5#exampleModalCenterTitle.modal-title Modal title
-              button.close(type='button', data-dismiss='modal', aria-label='Close')
-                span(aria-hidden='true') ×
-            .modal-body
-              | ...
-            .modal-footer
-              button.btn.btn-outline-primary(type='button', data-dismiss='modal') Close
-              button.btn.btn-primary(type='button') Save changes
+block mainInner
+  nav.col-12.c-featureBar.mb-12
+    .c-featureBar__name.text-Lato-Bold 
+      | Admin
+    a.c-featureBar__mainBtn.text-decoration-none(href="#", title="Add New Admin")
+      span.material-icons.text-primary.mr-2
+        | add
+      span.c-featureBar__mainBtn__text.text-Lato-Bold.text-black
+        | Add New Admin
+    ul.c-featureBar__btnList.text-decoration-none
+      li.mr-6
+        a.text-black(href="#", title='click to search page')
+          span.material-icons
+            | search
+      li
+        a.text-black(href="#", title='click look notifications list')
+          span.material-icons
+            | notifications_active
+  .col-lg-3
+    h1 這是 h1 - 24px
+  .col-lg-3
+    h1.h1 這是 h1.h1 - 24px
+  .col-lg-3
+    h2 這是 h2 - 20px
+  .col-lg-3
+    h2.h2 這是 h2.h2 - 20px
+  .col-lg-3
+    h3 這是 h3 - 16px
+  .col-lg-3
+    h3.h3 這是 h3.h3 - 16px
+  .col-lg-3
+    h4 這是 h4 - 14px
+  .col-lg-3
+    h4.h4 這是 h4.h4 - 14px
+  .col-lg-3
+    h5 這是 h5 - 12px
+  .col-lg-3
+    h5.h5 這是 h5.h5 - 12px
+  .col-lg-3
+    h6 這是 h6 - 10px
+  .col-lg-3
+    h6.h6 這是 h6.h6 - 10px
+  .col-12
+    p 
+      span 基本字級 1rem = 16px
+      small.ml-3 這是 small - 12px
+      span.small.ml-3 這是 span.small - 12px
+    p 
+      span.d-inline-block
+        | 字型字重設定
+      span.text-RobotoMono-Regular.d-inline-block.ml-3
+        | text-RobotoMono-Regular
+      span.text-Lato-Regular.d-inline-block.ml-3
+        | text-Lato-Regular
+      span.text-Lato-Bold.d-inline-block.ml-3
+        | text-Lato-Bold
+    p
+      | 使用 <mark>$table-hover-bg</mark> 變數變更表格 hover 背景色色彩。
+    hr
+    table.table.table-hover.c-table
+      thead
+        tr
+          th.c-tableThStatus
+            span.mr-2.c-tableThStatus__text
+              | ID
+            span.material-icons.text-primary.c-tableThStatus__icon
+              | arrow_downward
+          th Name
+          th Email
+          th Verified
+      tbody
+        tr
+          td #1
+          td Emir Wicks
+          td emir.wicks@mail.com
+          td
+            .c-tableTdFeature
+              span.c-tableTdFeature__text 
+                | Yes
+              span.c-tableTdFeature__btns
+                a.c-tableTdFeature__btns__btn(href="#")
+                  span.material-icons.c-tableTdFeatureIcon
+                    | remove_red_eye
+                a.c-tableTdFeature__btns__btn(href="#")
+                  span.material-icons.c-tableTdFeatureIcon
+                    | edit
+        tr
+          td #2
+          td Zaina Goldsmith
+          td zaina.goldsmith@mail.com
+          td.c-tableTdFeature
+            span.c-tableTdFeature__text 
+              | Yes
+            span.c-tableTdFeature__btns
+              a.c-tableTdFeature__btns__btn(href="#")
+                span.material-icons.c-tableTdFeatureIcon
+                  | remove_red_eye
+              a.c-tableTdFeature__btns__btn(href="#")
+                span.material-icons.c-tableTdFeatureIcon
+                  | edit
+        tr
+          td #3
+          td Mahima Lopez
+          td Mahima.Lopez@mail.com
+          td.c-tableTdFeature
+            span.c-tableTdFeature__text 
+              | Yes
+            span.c-tableTdFeature__btns
+              a.c-tableTdFeature__btns__btn(href="#")
+                span.material-icons.c-tableTdFeatureIcon
+                  | remove_red_eye
+              a.c-tableTdFeature__btns__btn(href="#")
+                span.material-icons.c-tableTdFeatureIcon
+                  | edit
+    // Button trigger modal
+    nav(aria-label='Page navigation example')
+      ul.pagination.justify-content-end
+        li.page-item
+          a.page-link.border-primary(href='#', aria-label='Previous')
+            //- span(aria-hidden='true') «
+            span.material-icons
+              | chevron_left
+        li.page-item.active
+          a.page-link.border-primary(href='#') 1
+        li.page-item
+          a.page-link.border-primary(href='#') 2
+        li.page-item
+          a.page-link.border-primary(href='#') 3
+        li.page-item
+          a.page-link.border-primary(href='#', aria-label='Next')
+            //- span(aria-hidden='true') »
+            span.material-icons
+              | chevron_right
+    button.btn.btn-primary(type='button', data-toggle='modal', data-target='#exampleModalCenter')
+      | Launch demo modal
 
-      script(src="assets/js/allVendors.js?#{new Date().getTime()}")
-      script(src="assets/js/all.js?#{new Date().getTime()}")
+  // Modal
+  #exampleModalCenter.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+      .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+          .modal-header
+            h5#exampleModalCenterTitle.modal-title Modal title
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') ×
+          .modal-body
+            | ...
+          .modal-footer
+            button.btn.btn-outline-primary(type='button', data-dismiss='modal') Close
+            button.btn.btn-primary(type='button') Save changes
+
+      //- script(src="assets/js/allVendors.js?#{new Date().getTime()}")
+      //- script(src="assets/js/all.js?#{new Date().getTime()}")
 

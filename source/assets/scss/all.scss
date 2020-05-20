@@ -9,9 +9,13 @@
 /* End of vendors
 -------------------------------------------------- */
 
+@import 'layout/l-sldebar';
 
 
-body {
-  background-color: $bodyBgColor;
-  color: $bodyTextColor;
-}
+/* components
+-------------------------------------------------- */
+@import 'components/c-user';
+@import 'components/c-featureBar';
+@import 'components/c-table';
+/* End of components
+-------------------------------------------------- */

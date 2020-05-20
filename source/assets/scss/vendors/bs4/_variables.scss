@@ -6,16 +6,16 @@
 // Color system
 
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
+$gray-100: rgba(0, 0, 0, 0.38) !default;  // (淡灰) // #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
+$gray-600: rgba(0, 0, 0, 0.6) !default;  // (重灰) // #6c757d !default;
 $gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
+$gray-800: rgba(112, 112, 112, 1) !default;  // (深灰) // #343a40 !default;
+$gray-900: #121212 !default;  // (黑色)  // #212529 !default;
+$black:    #121212 !default;  // (黑色)  // #000 !default;
 
 $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -61,12 +61,16 @@ $colors: map-merge(
     "cyan":       $cyan,
     "white":      $white,
     "gray":       $gray-600,
-    "gray-dark":  $gray-800
+    "gray-dark":  $gray-800,
+    "black":  $black
   ),
   $colors
 );
 
-$primary:       #2A8356 !default; // $blue !default;
+$primary:           #2A8356 !default; //自定色 1 // $blue !default;
+$primaryLight:      #EDF4EE !default; // 自定色 2
+$primaryLightDull:  #CDDDCD !default; // 自定色 3
+
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -79,14 +83,17 @@ $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
-    "primary":    $primary,
+    "primary":            $primary,
+    "primaryLight":       $primaryLight,
+    "primaryLightDull":   $primaryLightDull,
     "secondary":  $secondary,
     "success":    $success,
     "info":       $info,
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark
+    "dark":       $dark,
+    "black":  $black
   ),
   $theme-colors
 );
@@ -142,11 +149,18 @@ $spacers: () !default;
 $spacers: map-merge(
   (
     0: 0,
-    1: ($spacer * .25),
-    2: ($spacer * .5),
-    3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    1: ($spacer * .25), // 16*0.25 = 4
+    2: ($spacer * .5), // 16*0.5 = 8
+    3: ($spacer * .75),
+    4: $spacer,
+    5: ($spacer * 1.25),
+    6: ($spacer * 1.5), // 16*1.5 = 24
+    7: ($spacer * 1.75),
+    8: ($spacer * 2),
+    9: ($spacer * 2.25),
+    10: ($spacer * 2.5), 
+    11: ($spacer * 2.75),  
+    12: ($spacer * 3)  // 16*3 = 48
   ),
   $spacers
 );
@@ -240,9 +254,9 @@ $line-height-lg:              1.5 !default;
 $line-height-sm:              1.5 !default;
 
 $border-width:                1px !default;
-$border-color:                $gray-300 !default;
+$border-color:                $primaryLightDull !default;   // $gray-300 !default;
 
-$border-radius:               .25rem !default;
+$border-radius:               2px !default;  // .25rem !default;
 $border-radius-lg:            .3rem !default;
 $border-radius-sm:            .2rem !default;
 
@@ -283,7 +297,7 @@ $embed-responsive-aspect-ratios: join(
 $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
-$font-family-Lato-Regular: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-Lato-Regular: 'Lato', -apple-system, BlinkMacSystemFont, 'Microsoft JhengHei', '微軟正黑體', "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Symbol" !default;
 
 $font-family-base:            $font-family-Lato-Regular !default;
 // $font-family-base:            $font-family-sans-serif !default;
@@ -346,7 +360,7 @@ $blockquote-font-size:        $font-size-base * 1.25 !default;
 $hr-border-color:             rgba($black, .1) !default;
 $hr-border-width:             $border-width !default;
 
-$mark-padding:                .2em !default;
+$mark-padding:                0px 4px !default;   // .2em !default;
 
 $dt-font-weight:              $font-weight-bold !default;
 
@@ -355,7 +369,7 @@ $nested-kbd-font-weight:      $font-weight-bold !default;
 
 $list-inline-padding:         .5rem !default;
 
-$mark-bg:                     #fcf8e3 !default;
+$mark-bg:                     $primaryLight !default;   //#fcf8e3 !default;
 
 $hr-margin-y:                 $spacer !default;
 
@@ -364,14 +378,14 @@ $hr-margin-y:                 $spacer !default;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:          .75rem !default;
+$table-cell-padding:          17px 8px 19px 8px !default;  // .75rem !default
 $table-cell-padding-sm:       .3rem !default;
 
 $table-color:                 $body-color !default;
 $table-bg:                    null !default;
 $table-accent-bg:             rgba($black, .05) !default;
 $table-hover-color:           $table-color !default;
-$table-hover-bg:              rgba($black, .075) !default;
+$table-hover-bg:              rgba($primary, .075) !default; // rgba($black, .075) !default
 $table-active-bg:             $table-hover-bg !default;
 
 $table-border-width:          $border-width !default;
@@ -803,15 +817,15 @@ $dropdown-header-padding:           $dropdown-padding-y $dropdown-item-padding-x
 
 // Pagination
 
-$pagination-padding-y:              .5rem !default;
-$pagination-padding-x:              .75rem !default;
+$pagination-padding-y:              6px !default;    //.5rem !default;
+$pagination-padding-x:              12px !default;   //.75rem !default;
 $pagination-padding-y-sm:           .25rem !default;
 $pagination-padding-x-sm:           .5rem !default;
 $pagination-padding-y-lg:           .75rem !default;
 $pagination-padding-x-lg:           1.5rem !default;
 $pagination-line-height:            1.25 !default;
 
-$pagination-color:                  $link-color !default;
+$pagination-color:                  $black !default;  //$link-color !default;
 $pagination-bg:                     $white !default;
 $pagination-border-width:           $border-width !default;
 $pagination-border-color:           $gray-300 !default;

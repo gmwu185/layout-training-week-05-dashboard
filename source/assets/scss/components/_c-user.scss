@@ -1,0 +1,38 @@
+.c-user {
+  &Cover {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    &::after {
+      display: block;
+      content: '';
+      padding-top: 100%;
+      width: 100%;
+    }
+    &--userImg{
+      &One {
+        background-image: url('/assets/img/user-1.webp');
+      }
+      &Two {
+        background-image: url('/assets/img/user-2.webp');
+      }
+      &Three {
+        background-image: url('/assets/img/user-3.webp');
+      }
+    }
+  }
+  &Info {
+    &__name {
+      line-height: 19px;
+      margin-bottom: 0;
+    }
+    &__text {
+      line-height: 17px;
+      margin-bottom: 0;
+    }
+  }
+}
