@@ -1,0 +1,31 @@
+
+.p-message {
+  display: flex;
+  @include media-breakpoint-down(lg) {
+    flex-wrap: wrap;
+  }
+  &__head {
+    min-height: 25px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+.p-messageList {
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+  }
+  @include media-breakpoint-up(xl) {
+    min-width: 320px;
+    width: 35%;
+    margin-right: 16px;
+  }
+}
+.p-messageContent {
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 75%;
+  }
+}

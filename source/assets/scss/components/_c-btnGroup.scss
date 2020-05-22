@@ -1,0 +1,18 @@
+.c-btnGroupBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0px;
+}
+
+.c-contentBetween {
+  display: flex;
+  justify-content: space-between;
+  &__start {
+    width: 100%;
+  }
+  &__end {
+    text-align: right;
+    min-width: 100px;
+  }
+}

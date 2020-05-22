@@ -1,0 +1,5 @@
+// https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-function/rotate
+.u-rotated-center-90 {
+  transform-origin: center;
+  transform: rotate(90deg);
+}

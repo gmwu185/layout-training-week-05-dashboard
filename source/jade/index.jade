@@ -2,23 +2,7 @@
 extends extends/_layoutTemplate.jade
 
 block mainInner
-  nav.col-12.c-featureBar.mb-12
-    .c-featureBar__name.text-Lato-Bold 
-      | Admin
-    a.c-featureBar__mainBtn.text-decoration-none(href="#", title="Add New Admin")
-      span.material-icons.text-primary.mr-2
-        | add
-      span.c-featureBar__mainBtn__text.text-Lato-Bold.text-black
-        | Add New Admin
-    ul.c-featureBar__btnList.text-decoration-none
-      li.mr-6
-        a.text-black(href="#", title='click to search page')
-          span.material-icons
-            | search
-      li
-        a.text-black(href="#", title='click look notifications list')
-          span.material-icons
-            | notifications_active
+  
   .col-lg-3
     h1 這是 h1 - 24px
   .col-lg-3
@@ -43,114 +27,114 @@ block mainInner
     h6 這是 h6 - 10px
   .col-lg-3
     h6.h6 這是 h6.h6 - 10px
+  hr.w-100
   .col-12
+    h2.h1.mb-0  行內標籤
     p 
-      span 基本字級 1rem = 16px
-      small.ml-3 這是 small - 12px
-      span.small.ml-3 這是 span.small - 12px
-    p 
-      span.d-inline-block
-        | 字型字重設定
-      span.text-RobotoMono-Regular.d-inline-block.ml-3
-        | text-RobotoMono-Regular
-      span.text-Lato-Regular.d-inline-block.ml-3
-        | text-Lato-Regular
-      span.text-Lato-Bold.d-inline-block.ml-3
-        | text-Lato-Bold
+      small.mr-3 這是 small - 12px
+      span.small 這是 span.small - 12px
     p
-      | 使用 <mark>$table-hover-bg</mark> 變數變更表格 hover 背景色色彩。
-    hr
-    table.table.table-hover.c-table
-      thead
-        tr
-          th.c-tableThStatus
-            span.mr-2.c-tableThStatus__text
-              | ID
-            span.material-icons.text-primary.c-tableThStatus__icon
-              | arrow_downward
-          th Name
-          th Email
-          th Verified
-      tbody
-        tr
-          td #1
-          td Emir Wicks
-          td emir.wicks@mail.com
-          td
-            .c-tableTdFeature
-              span.c-tableTdFeature__text 
-                | Yes
-              span.c-tableTdFeature__btns
-                a.c-tableTdFeature__btns__btn(href="#")
-                  span.material-icons.c-tableTdFeatureIcon
-                    | remove_red_eye
-                a.c-tableTdFeature__btns__btn(href="#")
-                  span.material-icons.c-tableTdFeatureIcon
-                    | edit
-        tr
-          td #2
-          td Zaina Goldsmith
-          td zaina.goldsmith@mail.com
-          td.c-tableTdFeature
-            span.c-tableTdFeature__text 
-              | Yes
-            span.c-tableTdFeature__btns
-              a.c-tableTdFeature__btns__btn(href="#")
-                span.material-icons.c-tableTdFeatureIcon
-                  | remove_red_eye
-              a.c-tableTdFeature__btns__btn(href="#")
-                span.material-icons.c-tableTdFeatureIcon
-                  | edit
-        tr
-          td #3
-          td Mahima Lopez
-          td Mahima.Lopez@mail.com
-          td.c-tableTdFeature
-            span.c-tableTdFeature__text 
-              | Yes
-            span.c-tableTdFeature__btns
-              a.c-tableTdFeature__btns__btn(href="#")
-                span.material-icons.c-tableTdFeatureIcon
-                  | remove_red_eye
-              a.c-tableTdFeature__btns__btn(href="#")
-                span.material-icons.c-tableTdFeatureIcon
-                  | edit
-    // Button trigger modal
-    nav(aria-label='Page navigation example')
-      ul.pagination.justify-content-end
-        li.page-item
-          a.page-link.border-primary(href='#', aria-label='Previous')
-            //- span(aria-hidden='true') «
-            span.material-icons
-              | chevron_left
-        li.page-item.active
-          a.page-link.border-primary(href='#') 1
-        li.page-item
-          a.page-link.border-primary(href='#') 2
-        li.page-item
-          a.page-link.border-primary(href='#') 3
-        li.page-item
-          a.page-link.border-primary(href='#', aria-label='Next')
-            //- span(aria-hidden='true') »
-            span.material-icons
-              | chevron_right
-    button.btn.btn-primary(type='button', data-toggle='modal', data-target='#exampleModalCenter')
-      | Launch demo modal
+      | 使用 mark tag 的 <mark>$table-hover-bg</mark> 變數變更表格 hover 背景色色彩。
+  .col-12
+    h2.h1.mb-0  基本字級
+    p
+      span.d-inline-block.u-fontSize-ss.mr-3 .u-fontSize-ss - 12px
+      span.d-inline-block.u-fontSize-s.mr-3 .u-fontSize-s - 14px
+      span.d-inline-block.u-fontSize-base.mr-3 .u-fontSize-base - 16px (1rem = 16px)
+      span.d-inline-block.u-fontSize-m.mr-3 .u-fontSize-m - 20px
+      span.d-inline-block.u-fontSize-l.mr-3 .u-fontSize-m - 24px
+    h2.h1.mb-0  字型字重設定
+    p 
+      span.text-RobotoMono-Regular.d-inline-block.mr-3
+        | text-RobotoMono-Regular
+      span.text-Lato-Regular.d-inline-block.mr-3
+        | text-Lato-Regular
+      span.text-Lato-Bold.d-inline-block.mr-3
+        | text-Lato-Bold
+    h2.h1.mb-0  icon-font
+    h3.h2.mb-0 
+    p.mb-0
+      span 左側欄
+      span.material-icons
+        | insert_chart
+      span.material-icons
+        | forum
+      span.material-icons
+        | assignment
+      span.material-icons
+        | video_library
+      span.material-icons
+        | people
+      span.material-icons
+        | settings
+    p.mb-0
+      span 左側欄
+      span.material-icons
+        | expand_more
+      span.material-icons
+        | search
+      span.material-icons
+        | notifications_active
+    p.mb-0 主內容
+      span.material-icons
+        | more_vert
+      span.material-icons
+        | star_border
+      span.material-icons
+        | edit
+      span.material-icons
+        | attach_file
+      span.material-icons
+        | chevron_left
+      span.material-icons
+        | chevron_right
+    p.mb-0 Admin頁面
+      span.material-icons
+        | add
+      span.material-icons
+        | arrow_downward
+      span.material-icons
+        | remove_red_eye
+    p.mb-0 Main-assignment-reply
+      span.material-icons
+        | arrow_drop_down
+      span.material-icons
+        | format_bold
+      span.material-icons
+        | format_italic
+      span.material-icons
+        | format_list_bulleted
+      span.material-icons
+        | format_list_numbered
+      span.material-icons
+        | insert_photo
+      span.material-icons
+        | insert_link
+      span.material-icons
+        | chevron_left
+      span.material-icons
+        | chevron_right
 
-  // Modal
-  #exampleModalCenter.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
-      .modal-dialog.modal-dialog-centered(role='document')
-        .modal-content
-          .modal-header
-            h5#exampleModalCenterTitle.modal-title Modal title
-            button.close(type='button', data-dismiss='modal', aria-label='Close')
-              span(aria-hidden='true') ×
-          .modal-body
-            | ...
-          .modal-footer
-            button.btn.btn-outline-primary(type='button', data-dismiss='modal') Close
-            button.btn.btn-primary(type='button') Save changes
+    p.mb-0 Edit Admin Modal
+      span.material-icons
+        | clear
+      span.material-icons
+        | check_circle
 
-      //- script(src="assets/js/allVendors.js?#{new Date().getTime()}")
-      //- script(src="assets/js/all.js?#{new Date().getTime()}")
+    p.mb-0 New Admin Modal
+      span.material-icons
+        | warning
+
+  hr.w-100
+  include ./components/nav/_c-assignmentNav.jade
+  include ./components/nav/_c-adminNav.jade
+  
+  hr.w-100
+  include ./components/message/_c-messageAssignment.jade
+
+  hr.w-100
+  .col-12
+    include ./components/table/_c-adminTable.jade
+    include ./components/pagination/_c-pagination.jade
+  include ./components/modal/_c-scrollModal-newAdmin-Modal-add-full.jade
 

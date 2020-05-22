@@ -1,0 +1,20 @@
+// _c-assignmentNav.jade
+nav.col-12.c-featureBar.mb-11
+  .c-featureBar__name.text-Lato-Bold 
+    | Assignment
+  a#dropdownMenuButton.dropdown.c-featureBar__mainBtn.text-decoration-none(href="#", title="Add New Admin", data-toggle="dropdown")
+    span.c-featureBar__mainBtn__text.text-Lato-Bold.text-black.mr-2
+      | All Courses
+    span.material-icons.text-primary
+      | expand_more
+  .dropdown-menu
+    a.dropdown-item(href="#") Courses-1
+    a.dropdown-item(href="#") Courses-2
+  ul.c-featureBar__btnList.text-decoration-none
+    li.c-featureBar__btnList__item.mr-6
+      a.material-icons.text-black.text-decoration-none(href="#", title='click to search page')
+        | search
+    li.c-featureBar__btnList__item
+      a.material-icons.text-black.text-decoration-none(href="#", title='click look notifications list')
+        | notifications_active
+// /_c-assignmentNav.jade

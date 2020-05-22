@@ -1,21 +1,54 @@
 @import 'fontSets';
 
-@import 'methods/main-variables';
-@import 'base/typography';
-
 /* vendors
 -------------------------------------------------- */
 @import 'vendors/bs4/bootstrap';
 /* End of vendors
 -------------------------------------------------- */
 
-@import 'layout/l-sldebar';
+/* base
+-------------------------------------------------- */
+@import 'base/baseSet';
+@import 'base/typography';
+/* End of base
+-------------------------------------------------- */
+
+
+
+/* utils
+-------------------------------------------------- */
+@import 'utils/u-font';
+@import 'utils/u-text';
+@import 'utils/u-listStayle';
+@import 'utils/u-spacing';
+@import 'utils/u-transform';
+/* End of utils
+-------------------------------------------------- */
 
 
 /* components
 -------------------------------------------------- */
 @import 'components/c-user';
+@import 'components/c-flexContent';
 @import 'components/c-featureBar';
 @import 'components/c-table';
+@import 'components/c-btnGroup';
+@import 'components/c-coverPanel';
+@import 'components/c-form';
 /* End of components
+-------------------------------------------------- */
+
+
+
+/* layout
+-------------------------------------------------- */
+@import 'layout/l-sldebar';
+/* End of layout
+-------------------------------------------------- */
+
+
+/* pages
+-------------------------------------------------- */
+@import 'pages/p-assignment';
+/* End of pages
 -------------------------------------------------- */

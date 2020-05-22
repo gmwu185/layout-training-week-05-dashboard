@@ -1,0 +1,142 @@
+// _c-messageAssignment.jade
+.col-12.p-message
+  .p-messageList
+    .p-message__head
+      a.text-Lato-Bold.text-black(href="#")
+        | All (4)
+        span.material-icons.text-primary.align-bottom
+          | expand_more
+    .card.bg-primaryLight
+      .card-header.bg-transparent.c-contentBetween 
+        .c-contentBetween__start
+          p.small.mb-1 Chapter Assignment 2
+          h3.text-Lato-Bold.mb-0 Please check this file…
+        .c-contentBetween__end.small.text-right
+          p.mb-2 4 hrs ago
+          p.text-secondary.mb-0 Emily Wang
+      ul.list-group.list-group-flush.border-top-0
+        li.list-group-item.d-flex.justify-content-between
+          .c-contentBetween__start
+            p.small.mb-1 Chapter Assignment 1
+            h3.text-Lato-Bold.mb-0 My Homework
+          .c-contentBetween__end.small.text-right
+            p.mb-2 12 hrs ago
+            p.text-secondary.mb-0 David Xu
+        li.list-group-item.d-flex.justify-content-between
+          .c-contentBetween__start
+            p.small.mb-1 Final Assignment
+            h3.text-Lato-Bold.mb-0 Have a problem with this…
+          .c-contentBetween__end.small.text-right
+            p.mb-2 18 hrs ago
+            p.text-secondary.mb-0 Tony Wei
+        li.list-group-item.d-flex.justify-content-between
+          .c-contentBetween__start
+            p.small.mb-1 Final Assignment
+            h3.text-Lato-Bold.mb-0 Did I do it right?
+          .c-contentBetween__end.small.text-right
+            p.mb-2 19 hrs ago
+            p.text-secondary.mb-0 Christina Lin
+  .p-messageContent.overflow-hidden
+    .p-message__head.justify-content-end
+      a.u-fontSize-ss.text-secondary.mb-0(href="#")
+        | 2 comments
+    .u-protrudBottom
+      .card
+        .card-header.c-contentBetween.align-items-center.bg-primaryLight.px-4
+          .c-contentBetween__start
+            p.small.mb-1 Chapter Assignment 2 / HTML&CSS
+            h3.text-Lato-Bold.mb-0 Please check this file for me, thanks!
+          .c-contentBetween__end.d-flex.align-items-center.justify-content-end
+            a.material-icons.text-black.text-decoration-none(href="#") more_vert
+        ul.card-body.list-unstyled.bg-white.p-0.mb-0
+          li
+            .media.pt-4.pl-4.pr-8
+              .c-userCover.c-userCover--userImgTwo.mr-2
+              .media-body
+                .c-contentBetween.mb-4
+                  .c-contentBetween__start.c-userInfo
+                    h3.h3.c-userInfo__name.text-Lato-Bold.mb-1
+                      | Emily Wang
+                    p.h4.c-userInfo__text.text-secondary
+                      | 10:38 AM (4 hours ago)
+                p.u-fontSize-s.mb-4
+                  | Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <mark>div</mark> is bigger than the height of the <mark>img</mark> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. 
+                  br 
+                  | What is the gap or extra space below image?
+                a.btn.btn-primaryLight.border-primaryLightDull.pr-4.mb-4(href="#")
+                  span.material-icons.align-middle
+                    | attach_file
+                  span.align-middle 
+                    | HW-2-David.zip
+                hr.my-0
+          li.c-coverPanel-relative
+            .media.pt-4.pb-5.pl-4.pr-8.c-coverPanel
+              .c-userCover.c-userCover--userImgOne.mr-2
+              .media-body
+                .c-contentBetween.mb-4
+                  .c-contentBetween__start.c-userInfo
+                    h3.h3.c-userInfo__name.text-Lato-Bold.mb-1
+                      | Andy Chen (You)
+                    p.h4.c-userInfo__text.text-secondary
+                      | 13:24 AM (1 hours ago)
+                  .c-contentBetween__end.d-flex.align-items-center.justify-content-end
+                    a.material-icons.text-black.text-decoration-none.mr-6(href="#") star_border
+                    a.material-icons.text-black.text-decoration-none(href="#") edit
+                div.u-fontSize-s
+                  P 
+                    | Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. 
+                    br
+                    br
+                    | You can:
+                  ul.u-listStyle-disc.u-listStyle-inside.u-text-indent-1.pl-0
+                    li adjust the <mark>vertical-align</mark> of the image to position it elsewhere (e.g. the <mark>middle</mark> )
+                    li change the <mark>display</mark> so it isn’t inline.
+            .c-btnGroupBetween.u-protrudBottom-pull.pb-0
+              .d-flex
+                a(href="#").material-icons.text-black.d-inline-block.text-decoration-none.mr-6
+                  | keyboard_arrow_left
+                a(href="#").material-icons.text-black.d-inline-block.text-decoration-none
+                  | keyboard_arrow_right
+              .d-flex
+                a.btn.btn-outline-primary.px-8.mr-4(href="#")
+                  | Mark as read
+                a.btn.btn-primary.px-8.js-call-coverPanel(href="#")
+                  | Reply
+            .c-coverPanel-section.c-coverPanel-section--bottom.js-coverPanel-section
+              // .c-coverPanel-section 透過 JavaScript 操作 .active 來收閤
+              form.card.h-100
+                .card-header.bg-primaryLight.d-flex.align-items-center.px-6.py-4
+                  a.text-Lato-Bold.text-black.text-decoration-none.mr-6(href="#")
+                    span.align-bottom.mr-2 Body Text
+                    span.material-icons.align-bottom
+                      | arrow_drop_down
+                  a.material-icons.text-black.text-decoration-none.mr-6(href="#")
+                    | format_bold
+                  a.material-icons.text-black.text-decoration-none.mr-6(href="#")
+                    | format_italic
+                  a.material-icons.text-black.text-decoration-none.mr-6(href="#")
+                    | format_list_bulleted
+                  a.material-icons.text-black.text-decoration-none.mr-6(href="#")
+                    | format_list_numbered
+                  a.material-icons.text-black.text-decoration-none.mr-6(href="#")
+                    | insert_photo
+                  a.material-icons.text-black.text-decoration-none.mr-6(href="#")
+                    | insert_link
+                  a.material-icons.text-black.text-decoration-none.mr-6.u-rotated-center-90(href="#")
+                    | unfold_more
+                  //- a.material-icons.text-black.text-decoration-none.mr-6(href="#")
+                  //-   | chevron_left
+                  //- a.material-icons.text-black.text-decoration-none(href="#")
+                  //-   | chevron_right
+                .card-body.pt-3.pb-6.px-6.d-flex.flex-column
+                  .form-group.h-100.mb-2
+                    // .sr-only 不同於 d-none，在無障礙相關閱讀器才可取得 lable 內的字串訊息。
+                    // https://bootstrap.hexschool.com/docs/4.2/components/forms/#inline-forms
+                    label.sr-only(for='coverPanelTextarea') coverPanelTextarea
+                    textarea#coverPanelTextarea.form-control.c-form-textareaResize-None.border-0.p-0.h-100(rows='3', placeholder="Reply an answer…")
+                  .form-group.d-flex.justify-content-end.mb-0
+                    a.btn.btn-outline-primary.px-8.mr-4.js-close-coverPanel(href="#")
+                      | Cancel
+                    a.btn.btn-primary.px-8(href="#")
+                      | Reply
+// /_c-messageAssignment.jade

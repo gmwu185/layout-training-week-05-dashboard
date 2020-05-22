@@ -38,7 +38,7 @@ $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #dc3545 !default;
+$red:     #E3006E !default;  // #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
@@ -170,7 +170,15 @@ $sizes: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $sizes: map-merge(
   (
+    5: 5%,
+    10: 10%,
+    15: 15%,
+    20: 20%,
     25: 25%,
+    30: 30%,
+    35: 35%,
+    40: 40%,
+    45: 45%,
     50: 50%,
     75: 75%,
     100: 100%,
@@ -250,7 +258,7 @@ $grid-row-columns:            6 !default;
 //
 // Define common padding and border radius sizes and more.
 
-$line-height-lg:              1.5 !default;
+$line-height-lg:              1.7 !default;  // 1.5 !default
 $line-height-sm:              1.5 !default;
 
 $border-width:                1px !default;
@@ -428,7 +436,7 @@ $input-btn-padding-x-sm:      .5rem !default;
 $input-btn-font-size-sm:      $font-size-sm !default;
 $input-btn-line-height-sm:    $line-height-sm !default;
 
-$input-btn-padding-y-lg:      .5rem !default;
+$input-btn-padding-y-lg:      .5rem !default; 
 $input-btn-padding-x-lg:      1rem !default;
 $input-btn-font-size-lg:      $font-size-lg !default;
 $input-btn-line-height-lg:    $line-height-lg !default;
@@ -503,7 +511,7 @@ $input-bg:                              $white !default;
 $input-disabled-bg:                     $gray-200 !default;
 
 $input-color:                           $gray-700 !default;
-$input-border-color:                    $gray-400 !default;
+$input-border-color:                    $black !default;  // $gray-400 !default
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      inset 0 1px 1px rgba($black, .075) !default;
 
@@ -528,7 +536,7 @@ $input-height-inner-quarter:            add($input-line-height * .25em, $input-p
 
 $input-height:                          add($input-line-height * 1em, add($input-padding-y * 2, $input-height-border, false)) !default;
 $input-height-sm:                       add($input-line-height-sm * 1em, add($input-padding-y-sm * 2, $input-height-border, false)) !default;
-$input-height-lg:                       add($input-line-height-lg * 1em, add($input-padding-y-lg * 2, $input-height-border, false)) !default;
+$input-height-lg:                       add($input-line-height-lg * 1em, add($input-padding-y-lg * 2, $input-height-border, false)) !default; //add($input-line-height-lg * 1em, add($input-padding-y-lg * 2, $input-height-border, false)) !default;
 
 $input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
@@ -550,17 +558,17 @@ $input-group-addon-border-color:        $input-border-color !default;
 
 $custom-forms-transition:               background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
-$custom-control-gutter:                 .5rem !default;
+$custom-control-gutter:                 .58rem !default;  // .5rem !default;
 $custom-control-spacer-x:               1rem !default;
 $custom-control-cursor:                 null !default;
 
-$custom-control-indicator-size:         1rem !default;
+$custom-control-indicator-size:         1.47rem !default;  // 1rem !default;
 $custom-control-indicator-bg:           $input-bg !default;
 
 $custom-control-indicator-bg-size:      50% 50% !default;
 $custom-control-indicator-box-shadow:   $input-box-shadow !default;
-$custom-control-indicator-border-color: $gray-500 !default;
-$custom-control-indicator-border-width: $input-border-width !default;
+$custom-control-indicator-border-color: $black !default;  //$gray-500 !default;
+$custom-control-indicator-border-width: 2px !default; // $input-border-width !default;
 
 $custom-control-label-color:            null !default;
 
@@ -605,13 +613,15 @@ $custom-select-height:              $input-height !default;
 $custom-select-indicator-padding:   1rem !default; // Extra padding to account for the presence of the background-image based indicator
 $custom-select-font-weight:         $input-font-weight !default;
 $custom-select-line-height:         $input-line-height !default;
-$custom-select-color:               $input-color !default;
+$custom-select-color:               $gray-600 !default;   // $input-color !default;
 $custom-select-disabled-color:      $gray-600 !default;
 $custom-select-bg:                  $input-bg !default;
 $custom-select-disabled-bg:         $gray-200 !default;
-$custom-select-bg-size:             8px 10px !default; // In pixels because image dimensions
+$custom-select-bg-size:             24px 24px !default; // 8px 10px !default; // In pixels because image dimensions
 $custom-select-indicator-color:     $gray-800 !default;
-$custom-select-indicator:           url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'><path fill='#{$custom-select-indicator-color}' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>") !default;
+$custom-select-indicator:           url("https://raw.githubusercontent.com/google/material-design-icons/224895a86501195e7a7ff3dde18e39f00b8e3d5a/navigation/svg/design/ic_expand_more_24px.svg") !default;
+// SVG 來源：https://github.com/google/material-design-icons/blob/master/navigation/svg/design/ic_expand_more_24px.svg
+// $custom-select-indicator:           url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'><path fill='#{$custom-select-indicator-color}' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>") !default;
 $custom-select-background:          escape-svg($custom-select-indicator) no-repeat right $custom-select-padding-x center / $custom-select-bg-size !default; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
 
 $custom-select-feedback-icon-padding-right: add(1em * .75, (2 * $custom-select-padding-y * .75) + $custom-select-padding-x + $custom-select-indicator-padding) !default;
@@ -634,8 +644,8 @@ $custom-select-height-sm:           $input-height-sm !default;
 
 $custom-select-padding-y-lg:        $input-padding-y-lg !default;
 $custom-select-padding-x-lg:        $input-padding-x-lg !default;
-$custom-select-font-size-lg:        $input-font-size-lg !default;
-$custom-select-height-lg:           $input-height-lg !default;
+$custom-select-font-size-lg:        16px !default;  // $input-font-size-lg !default;
+$custom-select-height-lg:           52px !default;  // $input-height-lg !default;
 
 $custom-range-track-width:          100% !default;
 $custom-range-track-height:         .5rem !default;
@@ -855,13 +865,13 @@ $jumbotron-bg:                      $gray-200 !default;
 
 // Cards
 
-$card-spacer-y:                     .75rem !default;
-$card-spacer-x:                     1.25rem !default;
+$card-spacer-y:                     12px !default;  //.75rem !default;
+$card-spacer-x:                     12px !default;   //1.25rem !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
-$card-border-color:                 rgba($black, .125) !default;
+$card-border-color:                 $primaryLightDull !default;   //rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
-$card-cap-bg:                       rgba($black, .03) !default;
+$card-cap-bg:                       $primaryLightDull !default;   // rgba($black, .03) !default;
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
 $card-color:                        null !default;
@@ -967,7 +977,7 @@ $badge-pill-border-radius:          10rem !default;
 // Modals
 
 // Padding applied to the modal body
-$modal-inner-padding:               1rem !default;
+$modal-inner-padding:               2rem !default;  //1rem !default;
 
 // Margin between elements in footer, must be lower than or equal to 2 * $modal-inner-padding
 $modal-footer-margin-between:       .5rem !default;
@@ -988,17 +998,17 @@ $modal-content-box-shadow-sm-up:    0 .5rem 1rem rgba($black, .5) !default;
 
 $modal-backdrop-bg:                 $black !default;
 $modal-backdrop-opacity:            .5 !default;
-$modal-header-border-color:         $border-color !default;
+$modal-header-border-color:         transparent !default;   // $border-color !default
 $modal-footer-border-color:         $modal-header-border-color !default;
 $modal-header-border-width:         $modal-content-border-width !default;
 $modal-footer-border-width:         $modal-header-border-width !default;
-$modal-header-padding-y:            1rem !default;
-$modal-header-padding-x:            1rem !default;
+$modal-header-padding-y:            2rem !default;  // 1rem !default;
+$modal-header-padding-x:            2rem !default;  // 1rem !default;
 $modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
 
 $modal-xl:                          1140px !default;
 $modal-lg:                          800px !default;
-$modal-md:                          500px !default;
+$modal-md:                          480px !default;  // 500px !default;
 $modal-sm:                          300px !default;
 
 $modal-fade-transform:              translate(0, -50px) !default;
@@ -1040,12 +1050,12 @@ $progress-bar-transition:           width .6s ease !default;
 
 $list-group-color:                  null !default;
 $list-group-bg:                     $white !default;
-$list-group-border-color:           rgba($black, .125) !default;
+$list-group-border-color:           $primaryLightDull !default;   // rgba($black, .125) !default;
 $list-group-border-width:           $border-width !default;
 $list-group-border-radius:          $border-radius !default;
 
-$list-group-item-padding-y:         .75rem !default;
-$list-group-item-padding-x:         1.25rem !default;
+$list-group-item-padding-y:         12px !default;  //.75rem !default;
+$list-group-item-padding-x:         12px !default;  //1.25rem !default;
 
 $list-group-hover-bg:               $gray-100 !default;
 $list-group-active-color:           $component-active-color !default;
