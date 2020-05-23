@@ -1,0 +1,28 @@
+nav.col-2.l-sidebar.bg-primaryLight
+  a.l-sidebarLogo(href="index.html", title="go to index")
+    img(src="assets/img/logo-ANSWER.svg", alt="ANSWER logo")
+  ul.l-sidebarNav.flex-column
+    mixin link(url, icon, name)
+      if (path === url)
+        li.l-sidebarNav__list
+          a.l-sidebarNavLink.active(href='#{url}')
+            span.l-sidebarNavLink__icon.material-icons
+              | #{icon}
+            span.text-Lato-Bold
+              | #{name}
+      else
+        li.l-sidebarNav__list
+          a.l-sidebarNavLink(href='#{url}')
+            span.l-sidebarNavLink__icon.material-icons
+              | #{icon}
+            span.text-Lato-Bold
+              | #{name}
+    each item in menu.list
+      +link(item.url, item.icon, item.name)
+  .media.l-sidebarFooter
+    .c-userCover.c-userCover--userImgOne.mr-4
+    .media-body.c-userInfo
+      p.h3.text-Lato-Bold.mb-1.c-userInfo__name
+        | Andy Chen
+      p.h4.c-userInfo__text.text-secondary
+        | andy0401@mail.com

@@ -10,7 +10,7 @@ $(function () {
   $('.js-close-coverPanel').click( function (e) {
     e.preventDefault();
     $(".js-coverPanel-section").removeClass('active');
-  })
+  });
 })
 
 

@@ -1,6 +1,11 @@
 //- admin.jade
 extends extends/_layoutTemplate.jade
 
+block l-sidebar
+  - var path = 'admin.html'
+  include ./components/nav/_l-sidebar.jade
+  
+
 block mainInner
   include ./components/nav/_c-adminNav.jade
   .col-12

@@ -15,16 +15,16 @@ gulp.task('jade', function() {
   return gulp
     .src('./source/jade/**/!(_)*.jade') // "!(_)" 檔名前加 "_" 下底線時，檔案不處理 (多半為連結檔)
     .pipe($.plumber())
-    // .pipe($.data( function () {
-    //   var pageData = require("../source/data/scenic_spot_C_f.json")
-    //   var menu = require("../source/data/menu.json")
-    //   var source = {
-    //     'pageData': pageData,
-    //     'menu': menu
-    //   };
-    //   // console.log('source', source);
-    //   return source;
-    // }))
+    .pipe($.data( function () {
+      // var pageData = require("../source/data/scenic_spot_C_f.json")
+      var menu = require("../source/data/menu.json")
+      var source = {
+        // 'pageData': pageData,
+        'menu': menu
+      };
+      // console.log('source', source);
+      return source;
+    }))
     .pipe($.jade({
       pretty : true // false 會壓成單行
     }))
