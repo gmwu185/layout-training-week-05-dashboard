@@ -20,10 +20,10 @@ table.table.table-hover.c-table
           span.c-tableTdFeature__text 
             | Yes
           span.c-tableTdFeature__btns
-            a.c-tableTdFeature__btns__btn(href="#")
+            a.c-tableTdFeature__btns__btn(href="#", title="view Admin Verified", data-toggle='modal', data-target='#scrollableModal-Admin-Modal-view-full')
               span.material-icons.c-tableTdFeatureIcon
                 | remove_red_eye
-            a.c-tableTdFeature__btns__btn(href="#")
+            a.c-tableTdFeature__btns__btn(href="#", title="edit Admin Verified", data-toggle='modal', data-target='#scrollableModal-Admin-Modal-edit-full')
               span.material-icons.c-tableTdFeatureIcon
                 | edit
     tr
@@ -37,7 +37,8 @@ table.table.table-hover.c-table
           a.c-tableTdFeature__btns__btn(href="#")
             span.material-icons.c-tableTdFeatureIcon
               | remove_red_eye
-          a.c-tableTdFeature__btns__btn(href="#")
+          a.c-tableTdFeature__btns__btn(href="#"
+          )
             span.material-icons.c-tableTdFeatureIcon
               | edit
     tr

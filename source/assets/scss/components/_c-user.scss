@@ -13,6 +13,11 @@
       padding-top: 100%;
       width: 100%;
     }
+    &--square {
+      min-width: 141px;
+      min-height: 141px;
+      border-radius: 0px;
+    }
     &--userImg{
       &One {
         background-image: url('../../assets/img/user-1.webp');

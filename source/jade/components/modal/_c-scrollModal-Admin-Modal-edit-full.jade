@@ -1,0 +1,83 @@
+// _c-scrollModal-Admin-Modal-edit-full.jade
+#scrollableModal-Admin-Modal-edit-full.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+  // .modal-dialog-scrollable 過長 Y 軸 / .modal-dialog-centered 居中
+  .modal-dialog.modal-dialog-scrollable.modal-dialog-centered
+    .modal-content
+      .modal-header.d-flex.align-items-center
+        h3.u-fontSize-l.text-Lato-Bold.mb-0 Edit Admin
+        a.material-icons.text-black.text-decoration-none(href="#", data-dismiss='modal', aria-label='Close')
+          | clear
+      .modal-body.pt-0
+        form
+          h4.u-fontSize-m.text-Lato-Bold 
+            | Account
+          .form-group
+            label.u-fontSize-s.mb-1(for='AdminUserName') Name
+            //- input#AdminUserName.form-control-plaintext.form-control-lg(type='text', value="Emir Wicks", readonly)
+            input#AdminUserName.form-control.form-control-lg(type='text', value="Emir Wicks", readonly)
+          .form-group
+            label.u-fontSize-s.mb-1(for='AdminInputEmail') Email
+            input#AdminInputEmail.form-control.form-control-lg(type='email', value="emir.wicks@mail.com", readonly)
+          hr.border-primaryLightDull.my-6
+          h4.u-fontSize-m.text-Lato-Bold 
+            | Verification
+          p.d-flex.align-items-center
+            span.material-icons.mr-2 
+              | check_circle
+            span
+              | Verified
+            span.ml-auto
+              | 2020/4/12
+          a.btn.btn-outline-primaryLightDull.btn-lg.btn-block.py-3(href="#")
+            span
+              | Send Verification Mail
+          hr.border-primaryLightDull.my-6
+          h4.u-fontSize-m.text-Lato-Bold.mb-4
+            | Access Level
+          label.mr-sm-2.sr-only(for='AccessLevelSelect') Preference
+          select#AccessLevelSelect.custom-select.custom-select-lg(required)
+            option(value='', disabled) -Choose access level-
+            option(value='Admin', selected) Admin
+            option(value='Editor') Editor
+            option(value='Author') Author
+          hr.border-primaryLightDull.my-6
+          h4.u-fontSize-m.text-Lato-Bold.mb-4
+            | Custom Access
+          .custom-control.custom-checkbox.my-4
+            input#ControlInlineCustomAccess-edit-Lecture.custom-control-input(type='checkbox')
+            label.custom-control-label(for='ControlInlineCustomAccess-edit-Lecture')
+              | Lecture
+          .custom-control.custom-checkbox.my-4
+            input#ControlInlineCustomAccess-edit-Coupon.custom-control-input(type='checkbox')
+            label.custom-control-label(for='ControlInlineCustomAccess-edit-Coupon')
+              | Coupon
+          .custom-control.custom-checkbox.my-4
+            input#ControlInlineCustomAccess-edit-Message.custom-control-input(type='checkbox')
+            label.custom-control-label(for='ControlInlineCustomAccess-edit-Message')
+              | Message
+          .custom-control.custom-checkbox.my-4
+            input#ControlInlineCustomAccess-edit-Setting.custom-control-input(type='checkbox')
+            label.custom-control-label(for='ControlInlineCustomAccess-edit-Setting')
+              | Setting
+          .custom-control.custom-checkbox.mb-8
+            input#ControlInlineCustomAccess-edit-TaskMenu.custom-control-input(type='checkbox')
+            label.custom-control-label(for='ControlInlineCustomAccess-edit-TaskMenu')
+              | Task Menu
+          hr.border-primaryLightDull.my-6
+          h4.u-fontSize-m.text-Lato-Bold.mb-4
+            | Deactivate Account
+          p.d-flex.align-items-center.text-danger.mb-4
+            span.material-icons.mr-2 
+              | warning
+            span
+              | This cannot be undone!
+          a.btn.btn-outline-danger.btn-lg.btn-block.py-3.mb-8(href="#")
+            span
+              | Send Verification Mail
+
+      .modal-footer.d-flex.justify-content-end
+        a.btn.btn-outline-primary.px-8.mr-4(href="#", data-dismiss='modal')
+          | Cancel
+        a.btn.btn-primary.px-8(href="#")
+          | Add
+// /_c-scrollModal-Admin-Modal-edit-full.jade

@@ -1,0 +1,27 @@
+// _c-scrollModal-Admin-Modal-view-full.jade
+#scrollableModal-Admin-Modal-view-full.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+  // .modal-dialog-scrollable 過長 Y 軸 / .modal-dialog-centered 居中
+  .modal-dialog.modal-dialog-scrollable.modal-dialog-centered
+    .modal-content
+      .modal-header.d-flex
+        .c-userCover.c-userCover--square.c-userCover--userImgThree.mr-6
+        .w-100.c-collapseBtn
+          a.material-icons.text-black.text-decoration-none.float-right(href="#", data-dismiss='modal', aria-label='Close')
+            | clear
+          p.mb-0 #1
+          p.mb-0 Admin
+          h3.u-fontSize-l.text-Lato-Bold.mb-2 
+            span.d-block Emir Wicks
+          p.text-secondary.mb-0
+            span.u-fontSize-s.d-block.mb-3 emir.wicks@mail.com
+            span.u-fontSize-s.mark.text-black.px-2.py-1.mb-0
+              | verified
+          a.material-icons.text-primary.align-bottom.text-decoration-none.c-collapseBtn__link.c-collapseBtn__link--rightBottom(href="#collapse", data-toggle="collapse") 
+            | expand_more
+      #collapse.collapse
+        .modal-footer.d-flex.justify-content-end.pt-0.pb-8
+          a.btn.btn-outline-danger.px-8.mr-4(href="#", data-dismiss='modal')
+            | Deactivate
+          a.btn.btn-primary.px-8(href="#", data-dismiss='modal')
+            | Edit
+// /_c-scrollModal-Admin-Modal-view-full.jade

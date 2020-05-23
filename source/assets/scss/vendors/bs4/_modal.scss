@@ -184,7 +184,7 @@
   // but is needed to fix https://github.com/twbs/bootstrap/issues/24800
   // stylelint-disable-next-line selector-max-universal
   > * {
-    margin: $modal-footer-margin-between / 2;
+    margin: 0; // margin: $modal-footer-margin-between / 2
   }
 }
 
