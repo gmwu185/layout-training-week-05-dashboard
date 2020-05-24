@@ -1,5 +1,5 @@
 # 連結頁面
-- [模組與資源列表頁](https://gmwu185.github.io/layout-training-week-05-dashboard/)
+- [模組與資源列表頁](https://gmwu185.github.io/layout-training-week-05-dashboard/)
 - [Assignment](https://gmwu185.github.io/layout-training-week-05-dashboard/assignment.html)
 - [Admin](https://gmwu185.github.io/layout-training-week-05-dashboard/admin.html)
 
