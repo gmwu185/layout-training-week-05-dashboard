@@ -234,7 +234,7 @@
   appearance: none;
 
   // 資料來源：https://moxo.io/blog/2016/04/08/笔记使用-css-伪类为-select-元素添加-placeholder/
-  // - 透過 HTML select Tag 內的 required 屬性，判斷子層的 option 的 value='' 與 disabled 屬性有沒有附合，如果有的話就不顯示 select Tag 的 :required 樣式設定。
+  // - 透過 HTML select Tag 內的 required 屬性，判斷子層的 option 的 value='' 與 disabled 屬性有沒有符合，如果有的話就不顯示 select Tag 的 :required 樣式設定。
   // - :invalid 用於即時改變樣式，驗證 input content 是否符合該 input type。
   &:required:invalid {
     color: $gray-600;

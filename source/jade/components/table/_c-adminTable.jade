@@ -11,147 +11,168 @@ table.table.table-hover.c-table
       th Email
       th Verified
   tbody
-    tr
-      td #1
-      td Emir Wicks
-      td emir.wicks@mail.com
-      td
-        .c-tableTdFeature
-          span.c-tableTdFeature__text 
-            | Yes
+    // mixin () 內所帶的參數不能使用 '-' 或是空隔等字符命名使用，在執行時會產生錯誤無法產生結構。
+    mixin trRoop(IDnum, Name, Email, VerifiedStatus, ModalViewID, ModalEditID)
+      tr
+        td(data-toggle='modal', data-target='#{ModalViewID}') 
+          | #{IDnum}
+        td(data-toggle='modal', data-target='#{ModalViewID}') 
+          | #{Name}
+        td(data-toggle='modal', data-target='#{ModalViewID}') 
+          | #{Email}
+        td.c-tableTdFeature
+          span.c-tableTdFeature__text(data-toggle='modal', data-target='#{ModalViewID}')
+            | #{VerifiedStatus}
           span.c-tableTdFeature__btns
-            a.c-tableTdFeature__btns__btn(href="#", title="view Admin Verified", data-toggle='modal', data-target='#scrollableModal-Admin-Modal-view-full')
+            a.c-tableTdFeature__btns__btn(href="#", title="view Admin Verified", data-toggle='modal', data-target='#{ModalViewID}')
               span.material-icons.c-tableTdFeatureIcon
                 | remove_red_eye
-            a.c-tableTdFeature__btns__btn(href="#", title="edit Admin Verified", data-toggle='modal', data-target='#scrollableModal-Admin-Modal-edit-full')
+            a.c-tableTdFeature__btns__btn(href="#", title="edit Admin Verified", data-toggle='modal', data-target='#{ModalEditID}')
               span.material-icons.c-tableTdFeatureIcon
                 | edit
-    tr
-      td #2
-      td Zaina Goldsmith
-      td zaina.goldsmith@mail.com
-      td.c-tableTdFeature
-        span.c-tableTdFeature__text 
-          | Yes
-        span.c-tableTdFeature__btns
-          a.c-tableTdFeature__btns__btn(href="#")
-            span.material-icons.c-tableTdFeatureIcon
-              | remove_red_eye
-          a.c-tableTdFeature__btns__btn(href="#"
-          )
-            span.material-icons.c-tableTdFeatureIcon
-              | edit
-    tr
-      td #3
-      td Mahima Lopez
-      td Mahima.Lopez@mail.com
-      td.c-tableTdFeature
-        span.c-tableTdFeature__text 
-          | Yes
-        span.c-tableTdFeature__btns
-          a.c-tableTdFeature__btns__btn(href="#")
-            span.material-icons.c-tableTdFeatureIcon
-              | remove_red_eye
-          a.c-tableTdFeature__btns__btn(href="#")
-            span.material-icons.c-tableTdFeatureIcon
-              | edit
-    tr
-      td #4
-      td Pharrell Murray
-      td Pharrell.Murray@mail.com
-      td.c-tableTdFeature
-        span.c-tableTdFeature__text 
-          | Yes
-        span.c-tableTdFeature__btns
-          a.c-tableTdFeature__btns__btn(href="#")
-            span.material-icons.c-tableTdFeatureIcon
-              | remove_red_eye
-          a.c-tableTdFeature__btns__btn(href="#")
-            span.material-icons.c-tableTdFeatureIcon
-              | edit
-    tr
-      td #5
-      td Annika Mcbride
-      td Annika.Mcbride@mail.com
-      td.c-tableTdFeature
-        span.c-tableTdFeature__text 
-          | Yes
-        span.c-tableTdFeature__btns
-          a.c-tableTdFeature__btns__btn(href="#")
-            span.material-icons.c-tableTdFeatureIcon
-              | remove_red_eye
-          a.c-tableTdFeature__btns__btn(href="#")
-            span.material-icons.c-tableTdFeatureIcon
-              | edit
-    tr
-      td #6
-      td Fatimah Clark
-      td Fatimah.Clark@mail.com
-      td.c-tableTdFeature
-        span.c-tableTdFeature__text 
-          | Yes
-        span.c-tableTdFeature__btns
-          a.c-tableTdFeature__btns__btn(href="#")
-            span.material-icons.c-tableTdFeatureIcon
-              | remove_red_eye
-          a.c-tableTdFeature__btns__btn(href="#")
-            span.material-icons.c-tableTdFeatureIcon
-              | edit
-    tr
-      td #7
-      td Klaudia Rhodes
-      td Klaudia.Rhodes@mail.com
-      td.c-tableTdFeature
-        span.c-tableTdFeature__text 
-          | Yes
-        span.c-tableTdFeature__btns
-          a.c-tableTdFeature__btns__btn(href="#")
-            span.material-icons.c-tableTdFeatureIcon
-              | remove_red_eye
-          a.c-tableTdFeature__btns__btn(href="#")
-            span.material-icons.c-tableTdFeatureIcon
-              | edit
-    tr
-      td #8
-      td Tillie Lucero
-      td Tillie.Lucero@mail.com
-      td.c-tableTdFeature
-        span.c-tableTdFeature__text 
-          | Yes
-        span.c-tableTdFeature__btns
-          a.c-tableTdFeature__btns__btn(href="#")
-            span.material-icons.c-tableTdFeatureIcon
-              | remove_red_eye
-          a.c-tableTdFeature__btns__btn(href="#")
-            span.material-icons.c-tableTdFeatureIcon
-              | edit
-    tr
-      td #9
-      td Sabrina Stephenson
-      td Sabrina.Stephenson@mail.com
-      td.c-tableTdFeature
-        span.c-tableTdFeature__text 
-          | Yes
-        span.c-tableTdFeature__btns
-          a.c-tableTdFeature__btns__btn(href="#")
-            span.material-icons.c-tableTdFeatureIcon
-              | remove_red_eye
-          a.c-tableTdFeature__btns__btn(href="#")
-            span.material-icons.c-tableTdFeatureIcon
-              | edit
-    tr
-      td #10
-      td Annie Smith
-      td Annie.Smith@mail.com
-      td.c-tableTdFeature
-        span.c-tableTdFeature__text 
-          | Yes
-        span.c-tableTdFeature__btns
-          a.c-tableTdFeature__btns__btn(href="#")
-            span.material-icons.c-tableTdFeatureIcon
-              | remove_red_eye
-          a.c-tableTdFeature__btns__btn(href="#")
-            span.material-icons.c-tableTdFeatureIcon
-              | edit
+    each item in adminTable.tr
+      +trRoop(item.IDnum, item.Name, item.Email, item.VerifiedStatus, item.ModalViewID, item.ModalEditID)
+
+    //- tr
+    //-   td #1
+    //-   td Emir Wicks
+    //-   td emir.wicks@mail.com
+    //-   td.c-tableTdFeature
+    //-       span.c-tableTdFeature__text 
+    //-         | Yes
+    //-       span.c-tableTdFeature__btns
+    //-         a.c-tableTdFeature__btns__btn(href="#", title="view Admin Verified", data-toggle='modal', data-target='#scrollableModal-Admin-Modal-view-full')
+    //-           span.material-icons.c-tableTdFeatureIcon
+    //-             | remove_red_eye
+    //-         a.c-tableTdFeature__btns__btn(href="#", title="edit Admin Verified", data-toggle='modal', data-target='#scrollableModal-Admin-Modal-edit-full')
+    //-           span.material-icons.c-tableTdFeatureIcon
+    //-             | edit
+    //- tr
+    //-   td #2
+    //-   td Zaina Goldsmith
+    //-   td zaina.goldsmith@mail.com
+    //-   td.c-tableTdFeature
+    //-     span.c-tableTdFeature__text 
+    //-       | Yes
+    //-     span.c-tableTdFeature__btns
+    //-       a.c-tableTdFeature__btns__btn(href="#")
+    //-         span.material-icons.c-tableTdFeatureIcon
+    //-           | remove_red_eye
+    //-       a.c-tableTdFeature__btns__btn(href="#"
+    //-       )
+    //-         span.material-icons.c-tableTdFeatureIcon
+    //-           | edit
+    //- tr
+    //-   td #3
+    //-   td Mahima Lopez
+    //-   td Mahima.Lopez@mail.com
+    //-   td.c-tableTdFeature
+    //-     span.c-tableTdFeature__text 
+    //-       | Yes
+    //-     span.c-tableTdFeature__btns
+    //-       a.c-tableTdFeature__btns__btn(href="#")
+    //-         span.material-icons.c-tableTdFeatureIcon
+    //-           | remove_red_eye
+    //-       a.c-tableTdFeature__btns__btn(href="#")
+    //-         span.material-icons.c-tableTdFeatureIcon
+    //-           | edit
+    //- tr
+    //-   td #4
+    //-   td Pharrell Murray
+    //-   td Pharrell.Murray@mail.com
+    //-   td.c-tableTdFeature
+    //-     span.c-tableTdFeature__text 
+    //-       | Yes
+    //-     span.c-tableTdFeature__btns
+    //-       a.c-tableTdFeature__btns__btn(href="#")
+    //-         span.material-icons.c-tableTdFeatureIcon
+    //-           | remove_red_eye
+    //-       a.c-tableTdFeature__btns__btn(href="#")
+    //-         span.material-icons.c-tableTdFeatureIcon
+    //-           | edit
+    //- tr
+    //-   td #5
+    //-   td Annika Mcbride
+    //-   td Annika.Mcbride@mail.com
+    //-   td.c-tableTdFeature
+    //-     span.c-tableTdFeature__text 
+    //-       | Yes
+    //-     span.c-tableTdFeature__btns
+    //-       a.c-tableTdFeature__btns__btn(href="#")
+    //-         span.material-icons.c-tableTdFeatureIcon
+    //-           | remove_red_eye
+    //-       a.c-tableTdFeature__btns__btn(href="#")
+    //-         span.material-icons.c-tableTdFeatureIcon
+    //-           | edit
+    //- tr
+    //-   td #6
+    //-   td Fatimah Clark
+    //-   td Fatimah.Clark@mail.com
+    //-   td.c-tableTdFeature
+    //-     span.c-tableTdFeature__text 
+    //-       | Yes
+    //-     span.c-tableTdFeature__btns
+    //-       a.c-tableTdFeature__btns__btn(href="#")
+    //-         span.material-icons.c-tableTdFeatureIcon
+    //-           | remove_red_eye
+    //-       a.c-tableTdFeature__btns__btn(href="#")
+    //-         span.material-icons.c-tableTdFeatureIcon
+    //-           | edit
+    //- tr
+    //-   td #7
+    //-   td Klaudia Rhodes
+    //-   td Klaudia.Rhodes@mail.com
+    //-   td.c-tableTdFeature
+    //-     span.c-tableTdFeature__text 
+    //-       | Yes
+    //-     span.c-tableTdFeature__btns
+    //-       a.c-tableTdFeature__btns__btn(href="#")
+    //-         span.material-icons.c-tableTdFeatureIcon
+    //-           | remove_red_eye
+    //-       a.c-tableTdFeature__btns__btn(href="#")
+    //-         span.material-icons.c-tableTdFeatureIcon
+    //-           | edit
+    //- tr
+    //-   td #8
+    //-   td Tillie Lucero
+    //-   td Tillie.Lucero@mail.com
+    //-   td.c-tableTdFeature
+    //-     span.c-tableTdFeature__text 
+    //-       | Yes
+    //-     span.c-tableTdFeature__btns
+    //-       a.c-tableTdFeature__btns__btn(href="#")
+    //-         span.material-icons.c-tableTdFeatureIcon
+    //-           | remove_red_eye
+    //-       a.c-tableTdFeature__btns__btn(href="#")
+    //-         span.material-icons.c-tableTdFeatureIcon
+    //-           | edit
+    //- tr
+    //-   td #9
+    //-   td Sabrina Stephenson
+    //-   td Sabrina.Stephenson@mail.com
+    //-   td.c-tableTdFeature
+    //-     span.c-tableTdFeature__text 
+    //-       | Yes
+    //-     span.c-tableTdFeature__btns
+    //-       a.c-tableTdFeature__btns__btn(href="#")
+    //-         span.material-icons.c-tableTdFeatureIcon
+    //-           | remove_red_eye
+    //-       a.c-tableTdFeature__btns__btn(href="#")
+    //-         span.material-icons.c-tableTdFeatureIcon
+    //-           | edit
+    //- tr
+    //-   td #10
+    //-   td Annie Smith
+    //-   td Annie.Smith@mail.com
+    //-   td.c-tableTdFeature
+    //-     span.c-tableTdFeature__text 
+    //-       | Yes
+    //-     span.c-tableTdFeature__btns
+    //-       a.c-tableTdFeature__btns__btn(href="#")
+    //-         span.material-icons.c-tableTdFeatureIcon
+    //-           | remove_red_eye
+    //-       a.c-tableTdFeature__btns__btn(href="#")
+    //-         span.material-icons.c-tableTdFeatureIcon
+    //-           | edit
 // table.table.table-hover.c-table
 // /_c-adminTable.jade
