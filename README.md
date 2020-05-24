@@ -16,11 +16,12 @@
 - `bower install`：透過 bower 前端套件下載至 `bower_components` 資料夾內。
 ## gulp 指令
 - `gulp`：執行開發環境
-- `gulp --env production`：輸出打包整個專案，處理包括
+- `gulp build`：輸出打包整個專案，處理包括
   - 去除註解
   - 壓縮圖片
   - 壓縮單行程式碼
   - 去除 JavaScript `console.log()` 等測試相關內容。
+<!-- - ` --env production` -->
 
 
 # 使用前端工具
