@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>
+       
+      ANSWER-dashboard
+    </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/all.css"/>
+    <!-- localStylesheet J-template-->
+    <!-- /localStylesheet J-template-->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- block l-sidebar J-template-->
+        <nav class="col-2 l-sidebar bg-primaryLight"><a href="index.html" title="go to index" class="l-sidebarLogo"><img src="assets/img/logo-ANSWER.svg" alt="ANSWER logo"/></a>
+          <ul class="l-sidebarNav flex-column">
+                        <li class="l-sidebarNav__list"><a href="#" class="l-sidebarNavLink"><span class="l-sidebarNavLink__icon material-icons">insert_chart</span><span class="text-Lato-Bold">Dashboard</span></a></li>
+                        <li class="l-sidebarNav__list"><a href="#" class="l-sidebarNavLink"><span class="l-sidebarNavLink__icon material-icons">forum</span><span class="text-Lato-Bold">Question</span></a></li>
+                        <li class="l-sidebarNav__list"><a href="assignment.html" class="l-sidebarNavLink active"><span class="l-sidebarNavLink__icon material-icons">assignment</span><span class="text-Lato-Bold">Assignment</span></a></li>
+                        <li class="l-sidebarNav__list"><a href="#" class="l-sidebarNavLink"><span class="l-sidebarNavLink__icon material-icons">video_library</span><span class="text-Lato-Bold">Course</span></a></li>
+                        <li class="l-sidebarNav__list"><a href="admin.html" class="l-sidebarNavLink"><span class="l-sidebarNavLink__icon material-icons">people</span><span class="text-Lato-Bold">Admin</span></a></li>
+                        <li class="l-sidebarNav__list"><a href="#" class="l-sidebarNavLink"><span class="l-sidebarNavLink__icon material-icons">settings</span><span class="text-Lato-Bold">Settings</span></a></li>
+          </ul>
+          <div class="media l-sidebarFooter">
+            <div class="c-userCover c-userCover--userImgOne mr-4"></div>
+            <div class="media-body c-userInfo">
+              <p class="h3 text-Lato-Bold mb-1 c-userInfo__name">Andy Chen</p>
+              <p class="h4 c-userInfo__text text-secondary">andy0401@mail.com</p>
+            </div>
+          </div>
+        </nav>
+        <!-- /block l-sidebar J-template-->
+        <main class="col p-8">
+          <div class="row mainInner">
+            <!-- mainInner J-template-->
+            <!-- _c-assignmentNav.jade-->
+            <nav class="col-12 c-featureBar mb-11">
+              <div class="c-featureBar__name text-Lato-Bold">
+                 
+                Assignment
+              </div><a id="dropdownMenuButton" href="#" title="Add New Admin" data-toggle="dropdown" class="dropdown c-featureBar__mainBtn text-decoration-none"><span class="c-featureBar__mainBtn__text text-Lato-Bold text-black mr-2">All Courses</span><span class="material-icons text-primary">expand_more</span></a>
+              <div class="dropdown-menu"><a href="#" class="dropdown-item">Courses-1</a><a href="#" class="dropdown-item">Courses-2</a></div>
+              <ul class="c-featureBar__btnList text-decoration-none">
+                <li class="c-featureBar__btnList__item mr-6"><a href="#" title="click to search page" class="material-icons text-black text-decoration-none">search</a></li>
+                <li class="c-featureBar__btnList__item"><a href="#" title="click look notifications list" class="material-icons text-black text-decoration-none">notifications_active</a></li>
+              </ul>
+            </nav>
+            <!-- /_c-assignmentNav.jade-->
+            <!-- _c-messageAssignment.jade-->
+            <div class="col-12 p-message">
+              <div class="p-messageList">
+                <div class="p-message__head"><a href="#" class="text-Lato-Bold text-black">All (4)<span class="material-icons text-primary align-bottom">expand_more</span></a></div>
+                <div class="card bg-primaryLight">
+                  <div class="card-header bg-transparent c-contentBetween"> 
+                    <div class="c-contentBetween__start">
+                      <p class="small mb-1">Chapter Assignment 2</p>
+                      <h3 class="text-Lato-Bold mb-0">Please check this file…</h3>
+                    </div>
+                    <div class="c-contentBetween__end small text-right">
+                      <p class="mb-2">4 hrs ago</p>
+                      <p class="text-secondary mb-0">Emily Wang</p>
+                    </div>
+                  </div>
+                  <ul class="list-group list-group-flush border-top-0">
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div class="c-contentBetween__start">
+                        <p class="small mb-1">Chapter Assignment 1</p>
+                        <h3 class="text-Lato-Bold mb-0">My Homework</h3>
+                      </div>
+                      <div class="c-contentBetween__end small text-right">
+                        <p class="mb-2">12 hrs ago</p>
+                        <p class="text-secondary mb-0">David Xu</p>
+                      </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div class="c-contentBetween__start">
+                        <p class="small mb-1">Final Assignment</p>
+                        <h3 class="text-Lato-Bold mb-0">Have a problem with this…</h3>
+                      </div>
+                      <div class="c-contentBetween__end small text-right">
+                        <p class="mb-2">18 hrs ago</p>
+                        <p class="text-secondary mb-0">Tony Wei</p>
+                      </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div class="c-contentBetween__start">
+                        <p class="small mb-1">Final Assignment</p>
+                        <h3 class="text-Lato-Bold mb-0">Did I do it right?</h3>
+                      </div>
+                      <div class="c-contentBetween__end small text-right">
+                        <p class="mb-2">19 hrs ago</p>
+                        <p class="text-secondary mb-0">Christina Lin</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="p-messageContent overflow-hidden">
+                <div class="p-message__head justify-content-end"><a href="#" class="u-fontSize-ss text-secondary mb-0">2 comments</a></div>
+                <div class="u-protrudBottom">
+                  <div class="card">
+                    <div class="card-header c-contentBetween align-items-center bg-primaryLight px-4">
+                      <div class="c-contentBetween__start">
+                        <p class="small mb-1">Chapter Assignment 2 / HTML&CSS</p>
+                        <h3 class="text-Lato-Bold mb-0">Please check this file for me, thanks!</h3>
+                      </div>
+                      <div class="c-contentBetween__end d-flex align-items-center justify-content-end"><a href="#" class="material-icons text-black text-decoration-none">more_vert</a></div>
+                    </div>
+                    <ul class="card-body list-unstyled bg-white p-0 mb-0">
+                      <li>
+                        <div class="media pt-4 pl-4 pr-8">
+                          <div class="c-userCover c-userCover--userImgTwo mr-2"></div>
+                          <div class="media-body">
+                            <div class="c-contentBetween mb-4">
+                              <div class="c-contentBetween__start c-userInfo">
+                                <h3 class="h3 c-userInfo__name text-Lato-Bold mb-1">Emily Wang</h3>
+                                <p class="h4 c-userInfo__text text-secondary">10:38 AM (4 hours ago)</p>
+                              </div>
+                            </div>
+                            <p class="u-fontSize-s mb-4">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <mark>div</mark> is bigger than the height of the <mark>img</mark> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br/>What is the gap or extra space below image?</p><a href="#" class="btn btn-primaryLight border-primaryLightDull pr-4 mb-4"><span class="material-icons align-middle">attach_file</span><span class="align-middle">
+                                 
+                                HW-2-David.zip</span></a>
+                            <hr class="my-0"/>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="c-coverPanel-relative">
+                        <div class="media pt-4 pb-5 pl-4 pr-8 c-coverPanel">
+                          <div class="c-userCover c-userCover--userImgOne mr-2"></div>
+                          <div class="media-body">
+                            <div class="c-contentBetween mb-4">
+                              <div class="c-contentBetween__start c-userInfo">
+                                <h3 class="h3 c-userInfo__name text-Lato-Bold mb-1">Andy Chen (You)</h3>
+                                <p class="h4 c-userInfo__text text-secondary">13:24 AM (1 hours ago)</p>
+                              </div>
+                              <div class="c-contentBetween__end d-flex align-items-center justify-content-end"><a href="#" class="material-icons text-black text-decoration-none mr-6">star_border</a><a href="#" class="material-icons text-black text-decoration-none">edit</a></div>
+                            </div>
+                            <div class="u-fontSize-s">
+                              <P>
+                                 
+                                Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br/><br/>You can:
+                              </P>
+                              <ul class="u-listStyle-disc u-listStyle-inside u-text-indent-1 pl-0">
+                                <li>adjust the <mark>vertical-align</mark> of the image to position it elsewhere (e.g. the <mark>middle</mark> )</li>
+                                <li>change the <mark>display</mark> so it isn’t inline.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="c-btnGroupBetween u-protrudBottom-pull pb-0">
+                          <div class="d-flex"><a href="#" class="material-icons text-black d-inline-block text-decoration-none mr-6">keyboard_arrow_left</a><a href="#" class="material-icons text-black d-inline-block text-decoration-none">keyboard_arrow_right</a></div>
+                          <div class="d-flex"><a href="#" class="btn btn-outline-primary px-8 mr-4">Mark as read</a><a href="#" class="btn btn-primary px-8 js-call-coverPanel">Reply</a></div>
+                        </div>
+                        <div class="c-coverPanel-section c-coverPanel-section--bottom js-coverPanel-section">
+                          <!-- .c-coverPanel-section 透過 JavaScript 操作 .active 來收閤-->
+                          <form class="card h-100">
+                            <div class="card-header bg-primaryLight d-flex align-items-center px-6 py-4"><a href="#" class="text-Lato-Bold text-black text-decoration-none mr-6"><span class="align-bottom mr-2">Body Text</span><span class="material-icons align-bottom">arrow_drop_down</span></a><a href="#" class="material-icons text-black text-decoration-none mr-6">format_bold</a><a href="#" class="material-icons text-black text-decoration-none mr-6">format_italic</a><a href="#" class="material-icons text-black text-decoration-none mr-6">format_list_bulleted</a><a href="#" class="material-icons text-black text-decoration-none mr-6">format_list_numbered</a><a href="#" class="material-icons text-black text-decoration-none mr-6">insert_photo</a><a href="#" class="material-icons text-black text-decoration-none mr-6">insert_link</a><a href="#" class="material-icons text-black text-decoration-none mr-6 u-rotated-center-90">unfold_more</a>
+                            </div>
+                            <div class="card-body pt-3 pb-6 px-6 d-flex flex-column">
+                              <div class="form-group h-100 mb-2">
+                                <!-- .sr-only 不同於 d-none，在無障礙相關閱讀器才可取得 lable 內的字串訊息。-->
+                                <!-- https://bootstrap.hexschool.com/docs/4.2/components/forms/#inline-forms-->
+                                <label for="coverPanelTextarea" class="sr-only">coverPanelTextarea</label>
+                                <textarea id="coverPanelTextarea" rows="3" placeholder="Reply an answer…" class="form-control c-form-textareaResize-None border-0 p-0 h-100"></textarea>
+                              </div>
+                              <div class="form-group d-flex justify-content-end mb-0"><a href="#" class="btn btn-outline-primary px-8 mr-4 js-close-coverPanel">Cancel</a><a href="#" onclick="alert('Reply content send complete')" class="btn btn-primary px-8 js-close-coverPanel">Reply</a></div>
+                            </div>
+                          </form>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /_c-messageAssignment.jade-->
+            <!-- /mainInner J-template-->
+          </div>
+        </main>
+        <!-- /main-->
+      </div>
+    </div>
+    <!-- block globalScripts J-template-->
+    <script src="assets/js/allVendors.js?1590310222124"></script>
+    <script src="assets/js/all.js?1590310222124"></script>
+    <!-- /block globalScripts J-template-->
+  </body>
+</html>

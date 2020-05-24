@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>
+       
+      ANSWER-dashboard
+    </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/all.css"/>
+    <!-- localStylesheet J-template-->
+    <!-- /localStylesheet J-template-->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- block l-sidebar J-template-->
+        <nav class="col-2 l-sidebar bg-primaryLight"><a href="index.html" title="go to index" class="l-sidebarLogo"><img src="assets/img/logo-ANSWER.svg" alt="ANSWER logo"/></a>
+          <ul class="l-sidebarNav flex-column">
+                        <li class="l-sidebarNav__list"><a href="#" class="l-sidebarNavLink"><span class="l-sidebarNavLink__icon material-icons">insert_chart</span><span class="text-Lato-Bold">Dashboard</span></a></li>
+                        <li class="l-sidebarNav__list"><a href="#" class="l-sidebarNavLink"><span class="l-sidebarNavLink__icon material-icons">forum</span><span class="text-Lato-Bold">Question</span></a></li>
+                        <li class="l-sidebarNav__list"><a href="assignment.html" class="l-sidebarNavLink"><span class="l-sidebarNavLink__icon material-icons">assignment</span><span class="text-Lato-Bold">Assignment</span></a></li>
+                        <li class="l-sidebarNav__list"><a href="#" class="l-sidebarNavLink"><span class="l-sidebarNavLink__icon material-icons">video_library</span><span class="text-Lato-Bold">Course</span></a></li>
+                        <li class="l-sidebarNav__list"><a href="admin.html" class="l-sidebarNavLink active"><span class="l-sidebarNavLink__icon material-icons">people</span><span class="text-Lato-Bold">Admin</span></a></li>
+                        <li class="l-sidebarNav__list"><a href="#" class="l-sidebarNavLink"><span class="l-sidebarNavLink__icon material-icons">settings</span><span class="text-Lato-Bold">Settings</span></a></li>
+          </ul>
+          <div class="media l-sidebarFooter">
+            <div class="c-userCover c-userCover--userImgOne mr-4"></div>
+            <div class="media-body c-userInfo">
+              <p class="h3 text-Lato-Bold mb-1 c-userInfo__name">Andy Chen</p>
+              <p class="h4 c-userInfo__text text-secondary">andy0401@mail.com</p>
+            </div>
+          </div>
+        </nav>
+        <!-- /block l-sidebar J-template-->
+        <main class="col p-8">
+          <div class="row mainInner">
+            <!-- mainInner J-template-->
+            <!-- _c-adminNav.jade-->
+            <nav class="col-12 c-featureBar mb-12">
+              <div class="c-featureBar__name text-Lato-Bold">
+                 
+                Admin
+              </div><a href="#" title="Add New Admin" data-toggle="modal" data-target="#scrollableModal-newAdmin-Modal-add-full" class="c-featureBar__mainBtn text-decoration-none"><span class="material-icons text-primary mr-2">add</span><span class="c-featureBar__mainBtn__text text-Lato-Bold text-black">Add New Admin</span></a>
+              <ul class="c-featureBar__btnList text-decoration-none">
+                <li class="c-featureBar__btnList__item mr-6"><a href="#" title="click to search page" class="material-icons text-black text-decoration-none">search</a></li>
+                <li class="c-featureBar__btnList__item"><a href="#" title="click look notifications list" class="material-icons text-black text-decoration-none">notifications_active</a></li>
+              </ul>
+            </nav>
+            <!-- /_c-adminNav.jade-->
+            <div class="col-12">
+              <!-- _c-adminTable.jade-->
+              <table class="table table-hover c-table">
+                <thead>
+                  <tr>
+                    <th class="c-tableThStatus"><span class="mr-2 c-tableThStatus__text">ID</span><span class="material-icons text-primary c-tableThStatus__icon">arrow_downward</span></th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Verified</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- mixin () 內所帶的參數不能使用 '-' 或是空隔等字符命名使用，在執行時會產生錯誤無法產生結構。-->
+                                    <tr>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        #1
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        Emir Wicks
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        emir.wicks@mail.com
+                                      </td>
+                                      <td class="c-tableTdFeature"><span data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__text">Yes</span><span class="c-tableTdFeature__btns"><a href="#" title="view Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">remove_red_eye</span></a><a href="#" title="edit Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-edit-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">edit</span></a></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        #2
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        Zaina Goldsmith
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        zaina.goldsmith@mail.com
+                                      </td>
+                                      <td class="c-tableTdFeature"><span data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__text">Yes</span><span class="c-tableTdFeature__btns"><a href="#" title="view Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">remove_red_eye</span></a><a href="#" title="edit Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-edit-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">edit</span></a></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        #3
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        Mahima Lopez
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        Mahima.Lopez@mail.com
+                                      </td>
+                                      <td class="c-tableTdFeature"><span data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__text">Yes</span><span class="c-tableTdFeature__btns"><a href="#" title="view Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">remove_red_eye</span></a><a href="#" title="edit Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-edit-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">edit</span></a></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        #4
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        Pharrell Murray
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        Pharrell.Murray@mail.com
+                                      </td>
+                                      <td class="c-tableTdFeature"><span data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__text">Yes</span><span class="c-tableTdFeature__btns"><a href="#" title="view Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">remove_red_eye</span></a><a href="#" title="edit Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-edit-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">edit</span></a></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        #5
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        Annika Mcbride
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        Annika.Mcbride@mail.com
+                                      </td>
+                                      <td class="c-tableTdFeature"><span data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__text">Yes</span><span class="c-tableTdFeature__btns"><a href="#" title="view Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">remove_red_eye</span></a><a href="#" title="edit Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-edit-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">edit</span></a></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        #6
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        Fatimah Clark
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        Fatimah.Clark@mail.com
+                                      </td>
+                                      <td class="c-tableTdFeature"><span data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__text">Yes</span><span class="c-tableTdFeature__btns"><a href="#" title="view Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">remove_red_eye</span></a><a href="#" title="edit Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-edit-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">edit</span></a></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        #7
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        Klaudia Rhodes
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        Klaudia.Rhodes@mail.com
+                                      </td>
+                                      <td class="c-tableTdFeature"><span data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__text">Yes</span><span class="c-tableTdFeature__btns"><a href="#" title="view Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">remove_red_eye</span></a><a href="#" title="edit Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-edit-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">edit</span></a></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        #8
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        Tillie Lucero
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        Tillie.Lucero@mail.com
+                                      </td>
+                                      <td class="c-tableTdFeature"><span data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__text">Yes</span><span class="c-tableTdFeature__btns"><a href="#" title="view Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">remove_red_eye</span></a><a href="#" title="edit Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-edit-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">edit</span></a></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        #9
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        Sabrina Stephenson
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        Sabrina.Stephenson@mail.com
+                                      </td>
+                                      <td class="c-tableTdFeature"><span data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__text">Yes</span><span class="c-tableTdFeature__btns"><a href="#" title="view Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">remove_red_eye</span></a><a href="#" title="edit Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-edit-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">edit</span></a></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        #10
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        Annie Smith
+                                      </td>
+                                      <td data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full">
+                                         
+                                        Annie.Smith@mail.com
+                                      </td>
+                                      <td class="c-tableTdFeature"><span data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__text">Yes</span><span class="c-tableTdFeature__btns"><a href="#" title="view Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-view-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">remove_red_eye</span></a><a href="#" title="edit Admin Verified" data-toggle="modal" data-target="#scrollableModal-Admin-Modal-edit-full" class="c-tableTdFeature__btns__btn"><span class="material-icons c-tableTdFeatureIcon">edit</span></a></span></td>
+                                    </tr>
+                </tbody>
+              </table>
+              <!-- table.table.table-hover.c-table-->
+              <!-- /_c-adminTable.jade-->
+              <!-- _c-pagination.jade-->
+              <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-end mb-0">
+                  <li class="page-item"><a href="#" aria-label="Previous" class="page-link border-primary"><span class="material-icons">chevron_left</span></a></li>
+                  <li class="page-item active"><a href="#" class="page-link border-primary">1</a></li>
+                  <li class="page-item"><a href="#" class="page-link border-primary">2</a></li>
+                  <li class="page-item"><a href="#" class="page-link border-primary">3</a></li>
+                  <li class="page-item"><a href="#" aria-label="Next" class="page-link border-primary"><span class="material-icons">chevron_right</span></a></li>
+                </ul>
+              </nav>
+              <!-- /_c-pagination.jade-->
+            </div>
+            <!-- .col-12-->
+            <!-- _c-scrollModal-newAdmin-Modal-add-full.jade-->
+            <!-- data-backdrop='static' 無法在半透黑區塊點按關閉。-->
+            <!-- data-keyboard='false' 無法直接使用鍵盤 ESC 關閉。-->
+            <div id="scrollableModal-newAdmin-Modal-add-full" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+              <!-- .modal-dialog-scrollable 過長 Y 軸 / .modal-dialog-centered 居中-->
+              <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header d-flex align-items-center">
+                    <h3 class="u-fontSize-l text-Lato-Bold mb-0">New Admin</h3><a href="#" data-dismiss="modal" aria-label="Close" class="material-icons text-black text-decoration-none">clear</a>
+                  </div>
+                  <div class="modal-body pt-0">
+                    <form>
+                      <h4 class="u-fontSize-m text-Lato-Bold">
+                         
+                        Account
+                      </h4>
+                      <div class="form-group">
+                        <label for="newAdminUserName" class="u-fontSize-s mb-1">Name</label>
+                        <input id="newAdminUserName" type="text" class="form-control form-control-lg"/>
+                      </div>
+                      <div class="form-group">
+                        <label for="newAdminInputEmail" class="u-fontSize-s mb-1">Email</label>
+                        <input id="newAdminInputEmail" type="email" class="form-control form-control-lg"/>
+                      </div>
+                      <hr class="border-primaryLightDull my-6"/>
+                      <h4 class="u-fontSize-m text-Lato-Bold">
+                         
+                        Verification
+                      </h4>
+                      <p class="d-flex align-items-center"><span class="material-icons text-danger mr-2">
+                           
+                          warning</span><span>unverified</span>
+                      </p><a href="#" class="btn btn-outline-primaryLightDull btn-lg btn-block py-3"><span class="text-primary text-Lato-Bold">Send Verification Mail</span></a>
+                      <hr class="border-primaryLightDull my-6"/>
+                      <h4 class="u-fontSize-m text-Lato-Bold mb-4">Access Level</h4>
+                      <label for="AccessLevelSelect" class="mr-sm-2 sr-only">Preference</label>
+                      <select id="AccessLevelSelect" required="required" class="custom-select custom-select-lg">
+                        <option value="" disabled="disabled" selected="selected">-Choose access level-</option>
+                        <option value="Admin">Admin</option>
+                        <option value="Editor">Editor</option>
+                        <option value="Author">Author</option>
+                      </select>
+                      <hr class="border-primaryLightDull my-6"/>
+                      <h4 class="u-fontSize-m text-Lato-Bold mb-4">Custom Access</h4>
+                      <div class="custom-control custom-checkbox my-4">
+                        <input id="ControlInlineCustomAccess-Lecture" type="checkbox" class="custom-control-input"/>
+                        <label for="ControlInlineCustomAccess-Lecture" class="custom-control-label">Lecture</label>
+                      </div>
+                      <div class="custom-control custom-checkbox my-4">
+                        <input id="ControlInlineCustomAccess-Coupon" type="checkbox" class="custom-control-input"/>
+                        <label for="ControlInlineCustomAccess-Coupon" class="custom-control-label">Coupon</label>
+                      </div>
+                      <div class="custom-control custom-checkbox my-4">
+                        <input id="ControlInlineCustomAccess-Message" type="checkbox" class="custom-control-input"/>
+                        <label for="ControlInlineCustomAccess-Message" class="custom-control-label">Message</label>
+                      </div>
+                      <div class="custom-control custom-checkbox my-4">
+                        <input id="ControlInlineCustomAccess-Setting" type="checkbox" class="custom-control-input"/>
+                        <label for="ControlInlineCustomAccess-Setting" class="custom-control-label">Setting</label>
+                      </div>
+                      <div class="custom-control custom-checkbox mb-8">
+                        <input id="ControlInlineCustomAccess-TaskMenu" type="checkbox" class="custom-control-input"/>
+                        <label for="ControlInlineCustomAccess-TaskMenu" class="custom-control-label">Task Menu</label>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-end"><a href="#" data-dismiss="modal" class="btn btn-outline-primary px-8 mr-4">Cancel</a><a href="#" class="btn btn-primary px-8">Add</a></div>
+                </div>
+              </div>
+            </div>
+            <!-- /_c-scrollModal-newAdmin-Modal-add-full.jade-->
+            <!-- _c-scrollModal-Admin-Modal-edit-full.jade-->
+            <div id="scrollableModal-Admin-Modal-edit-full" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+              <!-- .modal-dialog-scrollable 過長 Y 軸 / .modal-dialog-centered 居中-->
+              <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header d-flex align-items-center">
+                    <h3 class="u-fontSize-l text-Lato-Bold mb-0">Edit Admin</h3><a href="#" data-dismiss="modal" aria-label="Close" class="material-icons text-black text-decoration-none">clear</a>
+                  </div>
+                  <div class="modal-body pt-0">
+                    <form>
+                      <h4 class="u-fontSize-m text-Lato-Bold">
+                         
+                        Account
+                      </h4>
+                      <div class="form-group">
+                        <label for="AdminUserName" class="u-fontSize-s mb-1">Name</label>
+                        <input id="AdminUserName" type="text" value="Emir Wicks" readonly="readonly" class="form-control form-control-lg"/>
+                      </div>
+                      <div class="form-group">
+                        <label for="AdminInputEmail" class="u-fontSize-s mb-1">Email</label>
+                        <input id="AdminInputEmail" type="email" value="emir.wicks@mail.com" readonly="readonly" class="form-control form-control-lg"/>
+                      </div>
+                      <hr class="border-primaryLightDull my-6"/>
+                      <h4 class="u-fontSize-m text-Lato-Bold">
+                         
+                        Verification
+                      </h4>
+                      <p class="d-flex align-items-center"><span class="material-icons mr-2">
+                           
+                          check_circle</span><span>Verified</span><span class="ml-auto">2020/4/12</span></p><a href="#" class="btn btn-outline-primaryLightDull btn-lg btn-block py-3"><span class="text-Lato-Bold">Send Verification Mail</span></a>
+                      <hr class="border-primaryLightDull my-6"/>
+                      <h4 class="u-fontSize-m text-Lato-Bold mb-4">Access Level</h4>
+                      <label for="AccessLevelSelect" class="mr-sm-2 sr-only">Preference</label>
+                      <select id="AccessLevelSelect" required="required" class="custom-select custom-select-lg">
+                        <option value="" disabled="disabled">-Choose access level-</option>
+                        <option value="Admin" selected="selected">Admin</option>
+                        <option value="Editor">Editor</option>
+                        <option value="Author">Author</option>
+                      </select>
+                      <hr class="border-primaryLightDull my-6"/>
+                      <h4 class="u-fontSize-m text-Lato-Bold mb-4">Custom Access</h4>
+                      <div class="custom-control custom-checkbox my-4">
+                        <input id="ControlInlineCustomAccess-edit-Lecture" type="checkbox" class="custom-control-input"/>
+                        <label for="ControlInlineCustomAccess-edit-Lecture" class="custom-control-label">Lecture</label>
+                      </div>
+                      <div class="custom-control custom-checkbox my-4">
+                        <input id="ControlInlineCustomAccess-edit-Coupon" type="checkbox" class="custom-control-input"/>
+                        <label for="ControlInlineCustomAccess-edit-Coupon" class="custom-control-label">Coupon</label>
+                      </div>
+                      <div class="custom-control custom-checkbox my-4">
+                        <input id="ControlInlineCustomAccess-edit-Message" type="checkbox" class="custom-control-input"/>
+                        <label for="ControlInlineCustomAccess-edit-Message" class="custom-control-label">Message</label>
+                      </div>
+                      <div class="custom-control custom-checkbox my-4">
+                        <input id="ControlInlineCustomAccess-edit-Setting" type="checkbox" class="custom-control-input"/>
+                        <label for="ControlInlineCustomAccess-edit-Setting" class="custom-control-label">Setting</label>
+                      </div>
+                      <div class="custom-control custom-checkbox mb-8">
+                        <input id="ControlInlineCustomAccess-edit-TaskMenu" type="checkbox" class="custom-control-input"/>
+                        <label for="ControlInlineCustomAccess-edit-TaskMenu" class="custom-control-label">Task Menu</label>
+                      </div>
+                      <hr class="border-primaryLightDull my-6"/>
+                      <h4 class="u-fontSize-m text-Lato-Bold mb-4">Deactivate Account</h4>
+                      <p class="d-flex align-items-center text-danger mb-4"><span class="material-icons mr-2">
+                           
+                          warning</span><span>This cannot be undone!</span></p><a href="#" class="btn btn-outline-danger btn-lg btn-block py-3 mb-8"><span class="text-Lato-Bold">Deactivate This Account</span></a>
+                    </form>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-end"><a href="#" data-dismiss="modal" class="btn btn-outline-primary px-8 mr-4">Cancel</a><a href="#" class="btn btn-primary px-8">Add</a></div>
+                </div>
+              </div>
+            </div>
+            <!-- /_c-scrollModal-Admin-Modal-edit-full.jade-->
+            <!-- _c-scrollModal-Admin-Modal-view-full.jade-->
+            <div id="scrollableModal-Admin-Modal-view-full" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+              <!-- .modal-dialog-scrollable 過長 Y 軸 / .modal-dialog-centered 居中-->
+              <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header d-flex">
+                    <div class="c-userCover c-userCover--square c-userCover--userImgThree mr-6"></div>
+                    <div class="w-100 c-collapseBtn"><a href="#" data-dismiss="modal" aria-label="Close" class="material-icons text-black text-decoration-none float-right">clear</a>
+                      <p class="mb-0">#1</p>
+                      <p class="mb-0">Admin</p>
+                      <h3 class="u-fontSize-l text-Lato-Bold mb-2"> <span class="d-block">Emir Wicks</span></h3>
+                      <p class="text-secondary mb-0"><span class="u-fontSize-s d-block mb-3">emir.wicks@mail.com</span><span class="u-fontSize-s mark text-black px-2 py-1 mb-0">verified</span></p><a href="#collapse" data-toggle="collapse" class="material-icons text-primary align-bottom text-decoration-none c-collapseBtn__link c-collapseBtn__link--rightBottom collapsed">
+                         
+                        expand_more</a>
+                    </div>
+                  </div>
+                  <div id="collapse" class="collapse">
+                    <div class="modal-footer d-flex justify-content-end pt-0 pb-8"><a href="#" data-dismiss="modal" class="btn btn-outline-danger px-8 mr-4">Deactivate</a><a href="#" data-dismiss="modal" class="btn btn-primary px-8">Edit</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /_c-scrollModal-Admin-Modal-view-full.jade-->
+            <!-- /mainInner J-template-->
+          </div>
+        </main>
+        <!-- /main-->
+      </div>
+    </div>
+    <!-- block globalScripts J-template-->
+    <script src="assets/js/allVendors.js?1590310221421"></script>
+    <script src="assets/js/all.js?1590310221421"></script>
+    <!-- /block globalScripts J-template-->
+  </body>
+</html>
