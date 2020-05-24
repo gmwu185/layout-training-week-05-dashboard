@@ -1,3 +1,8 @@
+# 連結頁面
+- [模組與資源列表頁](https://gmwu185.github.io/layout-training-week-05-dashboard/)
+- [Assignment](https://gmwu185.github.io/layout-training-week-05-dashboard/assignment.html)
+- [Admin](https://gmwu185.github.io/layout-training-week-05-dashboard/admin.html)
+
 # 素材與資源
 - [Adobe XD 設計稿連結](https://xd.adobe.com/view/bd869667-ead5-4620-4329-ee0709cfef9e-cbb7/grid/)
 - Google Fonts
